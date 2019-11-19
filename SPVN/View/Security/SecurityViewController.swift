@@ -9,21 +9,22 @@
 import UIKit
 
 class SecurityViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if AppLocker().isEmptyPinCode {
+            SecurityViewController.pin(.create, animated: false)
+            appDelegate().isLocked = true
+        }
     }
     
-
     static func pin(_ mode: ALMode, animated: Bool = true) {
-      
-      var appearance = ALAppearance()
-      appearance.image = UIImage(named: "face")!
-      appearance.title = "Enter Passcode"
-      appearance.isSensorsEnabled = true
-
-      AppLocker.present(with: mode, and: appearance, style: .fullScreen, animated: animated)
+        
+        var appearance = ALAppearance()
+        appearance.image = UIImage(named: "face")!
+        appearance.title = "Enter Passcode"
+        appearance.isSensorsEnabled = true
+        
+        AppLocker.present(with: mode, and: appearance, style: .fullScreen, animated: animated)
     }
 }

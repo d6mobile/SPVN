@@ -171,14 +171,18 @@ public class AppLocker: UIViewController {
     }
     
     private func validateModeAction() {
-        pin == savedPin ? dismiss(animated: true, completion: nil) : incorrectPinAnimation()
+        pin == savedPin ? dismissAppLocker() : incorrectPinAnimation()
     }
     
     private func dismissAppLocker() {
         if let wd = appDelegate().window, wd.rootViewController is SecurityViewController {
             AppCenter.shared.mainFrame.makeMainScreen(window: wd)
         }
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: {
+            DispatchQueue.main.async {
+                appDelegate().isLocked = false
+            }
+        })
     }
     
     private func confirmPin() {
@@ -231,7 +235,7 @@ public class AppLocker: UIViewController {
         context.evaluatePolicy(policy, localizedReason: ALConstants.kLocalizedReason, reply: {  success, error in
             if success {
                 DispatchQueue.main.async {
-                    self.dismiss(animated: true, completion: nil)
+                    self.dismissAppLocker()
                 }
             }
         })
@@ -246,7 +250,6 @@ public class AppLocker: UIViewController {
             clearView()
             dismiss(animated: true, completion: nil)
         case ALConstants.button.face_touch_id.rawValue:
-            print("face_touch_id")
             checkSensors()
         default:
             drawing(isNeedClear: false, tag: sender.tag, backgroundColor: UIColor(red: 232.0/155, green: 170.0/255, blue: 0, alpha: 1))

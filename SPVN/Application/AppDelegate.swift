@@ -12,21 +12,22 @@ import Valet
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-
+    var isLocked = false
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = SecurityViewController()
         window?.makeKeyAndVisible()
-        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
-        if !AppLocker().isEmptyPinCode {
-            SecurityViewController.pin(.deactive, animated: false)
+            if !AppLocker().isEmptyPinCode, !isLocked {
+            isLocked = true
+            SecurityViewController.pin(.validate, animated: false)
         }
     }
     
@@ -41,10 +42,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-        if !AppLocker().isEmptyPinCode {
-            SecurityViewController.pin(.deactive, animated: false)
-        } else {
-            SecurityViewController.pin(.create, animated: false)
+        if !AppLocker().isEmptyPinCode, !self.isLocked {
+            appDelegate().isLocked = true
+            SecurityViewController.pin(.validate, animated: false)
         }
     }
     

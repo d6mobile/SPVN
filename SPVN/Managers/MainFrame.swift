@@ -22,6 +22,7 @@ final class MainFrame: MainFrameProtocol {
             let photosVC: PhotosViewController = PhotosViewController(nibName: PhotosViewController.className, bundle: nil)
             photosVC.navigationItem.title = "Albums"
             let naviPhotos = BaseNaviController(rootViewController: photosVC)
+            naviPhotos.imageView = UIImageView(image: UIImage(named: "icon_plus"))
             
             let tabbarItemPhotos = UITabBarItem(title: "Photos", image: nil, selectedImage: nil)
             naviPhotos.tabBarItem = tabbarItemPhotos

@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosViewController" customModule="SPVN" customModuleProvider="target">
             <connections>
+                <outlet property="banner" destination="v9Y-Ck-SxJ" id="oqC-Ja-7uq"/>
+                <outlet property="heightBanner" destination="4Pa-4k-X0a" id="kjh-3j-5lR"/>
+                <outlet property="scrollView" destination="x2e-2V-zGz" id="MqV-iD-ttT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,6 +24,30 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xmk-OI-FK8">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                     <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2e-2V-zGz">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eDh-LQ-tMs">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q5w-an-w4l">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="eDh-LQ-tMs" firstAttribute="bottom" secondItem="dC5-7H-QnW" secondAttribute="bottom" id="6Bv-kn-kaP"/>
+                                <constraint firstItem="eDh-LQ-tMs" firstAttribute="width" secondItem="pv4-Aa-Gm1" secondAttribute="width" id="BWu-Vc-N66"/>
+                                <constraint firstItem="eDh-LQ-tMs" firstAttribute="trailing" secondItem="dC5-7H-QnW" secondAttribute="trailing" id="JNu-8L-SJy"/>
+                                <constraint firstItem="dC5-7H-QnW" firstAttribute="top" secondItem="eDh-LQ-tMs" secondAttribute="top" id="V3b-ja-2aS"/>
+                                <constraint firstItem="eDh-LQ-tMs" firstAttribute="leading" secondItem="dC5-7H-QnW" secondAttribute="leading" id="rqp-C2-sMU"/>
+                            </constraints>
+                            <viewLayoutGuide key="safeArea" id="nAr-Jn-Zlj"/>
+                            <viewLayoutGuide key="contentLayoutGuide" id="dC5-7H-QnW"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="pv4-Aa-Gm1"/>
+                        </scrollView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9Y-Ck-SxJ">
                             <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                             <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31,7 +58,12 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="q5w-an-w4l" firstAttribute="height" secondItem="Xmk-OI-FK8" secondAttribute="height" id="CT4-P4-AYt"/>
                         <constraint firstAttribute="bottom" secondItem="v9Y-Ck-SxJ" secondAttribute="bottom" id="EIe-wB-Vhp"/>
+                        <constraint firstItem="v9Y-Ck-SxJ" firstAttribute="top" secondItem="x2e-2V-zGz" secondAttribute="bottom" id="QaT-0V-ack"/>
+                        <constraint firstItem="x2e-2V-zGz" firstAttribute="leading" secondItem="Xmk-OI-FK8" secondAttribute="leading" id="Ttv-df-v0q"/>
+                        <constraint firstAttribute="trailing" secondItem="x2e-2V-zGz" secondAttribute="trailing" id="cP7-SF-2d7"/>
+                        <constraint firstItem="x2e-2V-zGz" firstAttribute="top" secondItem="Xmk-OI-FK8" secondAttribute="top" id="sz2-U4-qAt"/>
                         <constraint firstItem="v9Y-Ck-SxJ" firstAttribute="leading" secondItem="Xmk-OI-FK8" secondAttribute="leading" id="xEj-HV-ZhI"/>
                         <constraint firstAttribute="trailing" secondItem="v9Y-Ck-SxJ" secondAttribute="trailing" id="xxX-jR-UQd"/>
                     </constraints>
