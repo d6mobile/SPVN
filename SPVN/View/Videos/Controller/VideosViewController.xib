@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="SPVN" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideosViewController" customModule="SPVN" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,31 +18,31 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7h-XL-5E9">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIH-UR-tNi">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y98-HR-H4u">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgF-PC-iS0">
                             <rect key="frame" x="0.0" y="812" width="414" height="50"/>
                             <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="50" id="EfG-qP-50d"/>
+                                <constraint firstAttribute="height" constant="50" id="DZ3-qa-MlK"/>
                             </constraints>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="y98-HR-H4u" firstAttribute="leading" secondItem="e7h-XL-5E9" secondAttribute="leading" id="6ca-3Y-CAP"/>
-                        <constraint firstAttribute="bottom" secondItem="y98-HR-H4u" secondAttribute="bottom" id="ax4-Wd-1e7"/>
-                        <constraint firstAttribute="trailing" secondItem="y98-HR-H4u" secondAttribute="trailing" id="yD7-J6-7IG"/>
+                        <constraint firstAttribute="bottom" secondItem="WgF-PC-iS0" secondAttribute="bottom" id="DTg-mg-RPQ"/>
+                        <constraint firstItem="WgF-PC-iS0" firstAttribute="leading" secondItem="CIH-UR-tNi" secondAttribute="leading" id="LQI-oG-e0S"/>
+                        <constraint firstAttribute="trailing" secondItem="WgF-PC-iS0" secondAttribute="trailing" id="pdB-Bh-Bdt"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="e7h-XL-5E9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WeO-7U-u6g"/>
-                <constraint firstItem="e7h-XL-5E9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="WpD-xc-bP7"/>
-                <constraint firstItem="e7h-XL-5E9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZmT-zd-GtR"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e7h-XL-5E9" secondAttribute="bottom" id="g35-6E-GxA"/>
+                <constraint firstItem="CIH-UR-tNi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8iO-Vf-5HW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CIH-UR-tNi" secondAttribute="bottom" id="MpQ-wk-q9H"/>
+                <constraint firstItem="CIH-UR-tNi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UiY-Zf-rdd"/>
+                <constraint firstItem="CIH-UR-tNi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="scc-eg-ljR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>

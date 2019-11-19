@@ -1,0 +1,16 @@
+PODS:
+  - Valet (3.2.6)
+
+DEPENDENCIES:
+  - Valet
+
+SPEC REPOS:
+  trunk:
+    - Valet
+
+SPEC CHECKSUMS:
+  Valet: dcc4ff74f0d010be665239ab89c7a4a5cd39ee33
+
+PODFILE CHECKSUM: acd2545ef6a2e49bc89dcc6c5e846f81310b8780
+
+COCOAPODS: 1.8.4

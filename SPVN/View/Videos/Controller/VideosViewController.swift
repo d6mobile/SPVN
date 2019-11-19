@@ -1,14 +1,14 @@
 //
-//  PhotosViewController.swift
+//  VideosViewController.swift
 //  SPVN
 //
-//  Created by ntq on 11/18/19.
+//  Created by DuyDV on 11/18/19.
 //  Copyright © 2019 DuyDV. All rights reserved.
 //
 
 import UIKit
 
-class PhotosViewController: UIViewController {
+final class VideosViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -52,6 +52,7 @@ public class AppLocker: UIViewController {
     @IBOutlet var pinIndicators: [Indicator]!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var cRation: NSLayoutConstraint!
+    @IBOutlet weak var sensorButton: UIButton!
     
     static let valet = Valet.valet(with: Identifier(nonEmpty: "Druidia")!, accessibility: .whenUnlockedThisDeviceOnly)
     // MARK: - Pincode
@@ -72,8 +73,15 @@ public class AppLocker: UIViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        switch Biometric.biometricType() {
+        case .face:
+            sensorButton.setTitle("Use FaceID", for: .normal)
+        case .touch:
+            sensorButton.setTitle("Use TouchID", for: .normal)
+        default:
+            break
+        }
         if UIDevice.current.userInterfaceIdiom == .phone {
-            self.cRation = self.cRation.setMultiplier(multiplier: 1/5)
             self.view.layoutIfNeeded()
         }
     }
@@ -167,6 +175,9 @@ public class AppLocker: UIViewController {
     }
     
     private func dismissAppLocker() {
+        if let wd = appDelegate().window, wd.rootViewController is SecurityViewController {
+            AppCenter.shared.mainFrame.makeMainScreen(window: wd)
+        }
         dismiss(animated: true, completion: nil)
     }
     

@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = SecurityViewController()
         window?.makeKeyAndVisible()
+        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
     

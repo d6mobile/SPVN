@@ -11,5 +11,11 @@ import UIKit
 
 class BaseViewController: UIViewController {
     
+    @IBOutlet private weak var banner: UIView!
+    @IBOutlet private weak var heightBanner: NSLayoutConstraint!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor(rgb: 0x0E1121)
+    }
 }

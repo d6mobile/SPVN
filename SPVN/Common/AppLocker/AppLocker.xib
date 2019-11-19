@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,16 +23,16 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJe-xa-NCR">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ucj-Uy-fv0" customClass="PhotoImageView" customModule="SPVN" customModuleProvider="target">
-                                        <rect key="frame" x="158.5" y="30" width="97" height="97.5"/>
+                                        <rect key="frame" x="158.5" y="64.5" width="97" height="97.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ucj-Uy-fv0" secondAttribute="height" multiplier="1:1" id="iRK-eU-gV6"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Passcode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdT-ql-mSO">
-                                        <rect key="frame" x="134" y="143.5" width="146" height="20"/>
+                                        <rect key="frame" x="134" y="198" width="146" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="Kec-KV-rG2"/>
                                         </constraints>
@@ -43,21 +43,21 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Ucj-Uy-fv0" firstAttribute="top" secondItem="HJe-xa-NCR" secondAttribute="top" constant="30" id="Dct-gq-80p"/>
                                     <constraint firstItem="jdT-ql-mSO" firstAttribute="centerX" secondItem="Ucj-Uy-fv0" secondAttribute="centerX" id="FhT-wL-5r6"/>
-                                    <constraint firstItem="jdT-ql-mSO" firstAttribute="top" secondItem="Ucj-Uy-fv0" secondAttribute="bottom" constant="16" id="WoB-TJ-ySc"/>
+                                    <constraint firstItem="jdT-ql-mSO" firstAttribute="top" secondItem="Ucj-Uy-fv0" secondAttribute="bottom" constant="36" id="WoB-TJ-ySc"/>
                                     <constraint firstItem="Ucj-Uy-fv0" firstAttribute="width" secondItem="HJe-xa-NCR" secondAttribute="width" multiplier="1:4.25" id="h13-Aj-uDZ"/>
                                     <constraint firstItem="Ucj-Uy-fv0" firstAttribute="centerX" secondItem="HJe-xa-NCR" secondAttribute="centerX" id="hLm-tl-xA1"/>
+                                    <constraint firstAttribute="bottom" secondItem="jdT-ql-mSO" secondAttribute="bottom" id="ruO-ZK-6s3"/>
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="submessage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agq-pY-chh">
-                                <rect key="frame" x="0.0" y="208.5" width="414" height="0.0"/>
+                                <rect key="frame" x="0.0" y="222" width="414" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L7N-HG-pFS">
-                                <rect key="frame" x="0.0" y="212.5" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="226" width="414" height="32"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="erg-Ss-Z4V">
                                         <rect key="frame" x="163" y="8" width="88" height="16"/>
@@ -104,16 +104,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eh6-tu-ye3" userLabel="keyboard">
-                                <rect key="frame" x="0.0" y="252.5" width="414" height="565.5"/>
+                                <rect key="frame" x="0.0" y="266" width="414" height="552"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GZp-zL-S7q">
-                                        <rect key="frame" x="60" y="24" width="294.5" height="501.5"/>
+                                        <rect key="frame" x="70" y="24" width="274" height="468"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mKO-Ew-6XV">
-                                                <rect key="frame" x="0.0" y="0.0" width="294.5" height="87.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="274" height="81"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvY-2b-h2q" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="81"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -126,7 +126,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQb-x4-cO9" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="103.5" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="96.5" y="0.0" width="81" height="81"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="fQb-x4-cO9" secondAttribute="height" multiplier="1:1" id="iMJ-B2-ER4"/>
                                                         </constraints>
@@ -142,7 +142,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Beg-ox-zrv" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="207" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="193.5" y="0.0" width="80.5" height="81"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,10 +157,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="XLm-Tr-Zq9">
-                                                <rect key="frame" x="0.0" y="103.5" width="294.5" height="87.5"/>
+                                                <rect key="frame" x="0.0" y="97" width="274" height="80.5"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHA-Vh-Uuy" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="4">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -173,7 +173,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fha-fs-XlT" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="103.5" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="96.5" y="0.0" width="81" height="80.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="5">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -186,7 +186,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eug-oU-Irp" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="207" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="193.5" y="0.0" width="80.5" height="80.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="6">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -201,10 +201,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="mtg-kF-AsT">
-                                                <rect key="frame" x="0.0" y="207" width="294.5" height="87.5"/>
+                                                <rect key="frame" x="0.0" y="193.5" width="274" height="81"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yop-pm-5Je" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="81"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="7">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,7 +217,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1E-UL-MZe" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="103.5" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="96.5" y="0.0" width="81" height="81"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="8">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -230,7 +230,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpT-He-3Qs" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="207" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="193.5" y="0.0" width="80.5" height="81"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="9">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -245,13 +245,13 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LOV-5T-nM4">
-                                                <rect key="frame" x="0.0" y="310.5" width="294.5" height="87.5"/>
+                                                <rect key="frame" x="0.0" y="290.5" width="274" height="80.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONG-LV-j3i">
-                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
                                                         <subviews>
                                                             <button hidden="YES" opaque="NO" clipsSubviews="YES" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b22-s1-chS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="80.5" height="80.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <state key="normal" title="Cancel">
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -273,7 +273,7 @@
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eoy-9Q-REW" customClass="PinIndicator" customModule="SPVN" customModuleProvider="target">
-                                                        <rect key="frame" x="103.5" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="96.5" y="0.0" width="81" height="80.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -286,7 +286,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T84-qp-eMs">
-                                                        <rect key="frame" x="207" y="0.0" width="87.5" height="87.5"/>
+                                                        <rect key="frame" x="193.5" y="0.0" width="80.5" height="80.5"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                         <state key="normal" title="Delete">
                                                             <color key="titleColor" red="0.98823529409999999" green="0.7725490196" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -301,10 +301,10 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="st3-Q2-Mi5">
-                                                <rect key="frame" x="0.0" y="414" width="294.5" height="87.5"/>
+                                                <rect key="frame" x="0.0" y="387" width="274" height="81"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCp-ge-rkn">
-                                                        <rect key="frame" x="108" y="29" width="78" height="30"/>
+                                                        <rect key="frame" x="98" y="25.5" width="78" height="30"/>
                                                         <state key="normal" title="Use FaceID">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
@@ -324,14 +324,14 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="GZp-zL-S7q" secondAttribute="bottom" constant="40" id="EZ3-VA-EoO"/>
+                                    <constraint firstAttribute="bottom" secondItem="GZp-zL-S7q" secondAttribute="bottom" constant="60" id="EZ3-VA-EoO"/>
                                     <constraint firstItem="GZp-zL-S7q" firstAttribute="top" secondItem="eh6-tu-ye3" secondAttribute="top" constant="24" id="ULB-jq-5Kl"/>
                                     <constraint firstItem="GZp-zL-S7q" firstAttribute="centerX" secondItem="eh6-tu-ye3" secondAttribute="centerX" id="jfk-Nx-3kA"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="HJe-xa-NCR" firstAttribute="height" secondItem="OBe-pb-uYT" secondAttribute="height" multiplier="1:4" id="fQK-o7-iu3"/>
+                            <constraint firstItem="HJe-xa-NCR" firstAttribute="height" secondItem="OBe-pb-uYT" secondAttribute="height" multiplier="1:3.75" id="fQK-o7-iu3"/>
                         </constraints>
                     </stackView>
                 </subviews>
@@ -349,6 +349,7 @@
                 <outlet property="cancelButton" destination="b22-s1-chS" id="i2Q-vE-vpa"/>
                 <outlet property="messageLabel" destination="jdT-ql-mSO" id="C7Q-bD-u0H"/>
                 <outlet property="photoImageView" destination="Ucj-Uy-fv0" id="WfD-0k-onZ"/>
+                <outlet property="sensorButton" destination="jCp-ge-rkn" id="Rq1-hx-1OL"/>
                 <outlet property="submessageLabel" destination="Agq-pY-chh" id="krd-zX-nCh"/>
                 <outletCollection property="pinIndicators" destination="YUH-Go-aU8" collectionClass="NSMutableArray" id="1ea-iC-n4g"/>
                 <outletCollection property="pinIndicators" destination="jDo-Oz-gYt" collectionClass="NSMutableArray" id="GhI-DE-h0S"/>
