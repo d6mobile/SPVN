@@ -15,7 +15,6 @@ final class PhotosViewController: BaseViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
     
     // MARK: Properties
-    private let animations = [AnimationType.from(direction: .bottom, offset: 30.0)]
     private let reuseIdentifier = "albumCoCell"
     private let margin: CGFloat = 16.0
     private var albums = [AlbumModel]()
@@ -28,20 +27,33 @@ final class PhotosViewController: BaseViewController {
         setupViewController()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.fetchData()
+        if let navi = self.navigationController as? BaseNaviController, navi.naviView != nil {
+            navi.naviView.backButton.isHidden = true
+            navi.naviView.titleLabel.text = navigationItem.title
+            navi.naviView.imageRight = UIImage(named: "icon_plus")
+            navi.naviView.callbackRightButton = {[weak self] in
+                self?.creatFolder(placeholder: "Enter albums Name", title: "Create New Album", subTitle: "Enter a name for your new album") { (txfName) in
+                    guard !txfName.isEmpty else {
+                        return
+                    }
+                    self?.saveAlbums(titleAlbum: txfName)
+                }
+            }
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
     
     private func setupViewController() {
-        setupCollectionView()
-        if let navi = self.navigationController as? BaseNaviController {
-            navi.delegateBaseNavi = self
+        if let navi = self.navigationController as? BaseNaviController, navi.naviView != nil {
+            navi.naviView.titleLabel.text = "Albums"
         }
-        self.fetchData()
-        UIView.animate(views: collectionView!.orderedVisibleCells,
-                            animations: animations, reversed: true,
-                            initialAlpha: 1.0,
-                            finalAlpha: 0.0,
-                            completion: {
-                             self.collectionView?.reloadData()
-             })
+        setupCollectionView()
     }
     
     private func setupCollectionView() {
@@ -95,12 +107,15 @@ extension PhotosViewController: UICollectionViewDelegateFlowLayout, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: (self.view.frame.width - 3*margin)/2, height: (self.view.frame.width - 60)/2)
+        return CGSize(width: (self.view.frame.width - 3*margin)/2, height: 2*(self.view.frame.width - 3*margin)/3)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailVC = DetailPhotosViewController(nibName: DetailPhotosViewController.className, bundle: nil)
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        guard let navi = self.navigationController as? BaseNaviController else { return }
+        detailVC.navigationItem.title = albums[indexPath.row].title
+        detailVC.navigationItem.hidesBackButton = true
+        navi.pushViewController(detailVC, animated: true)
     }
 }
 
@@ -120,17 +135,7 @@ extension PhotosViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
+        cell.fillDataToCell(self.albums[indexPath.row].title)
         return cell
     }
 }
-
-// MARK: BaseNaviControllerProtocol
-extension PhotosViewController: BaseNaviControllerProtocol {
-    
-    func imageViewResizeDidTouch() {
-        self.creatFolder(placeholder: "Enter albums Name", title: "Create New Album", subTitle: "Enter a name for your new album") { (txfName) in
-            self.saveAlbums(titleAlbum: txfName)
-        }
-    }
-}
-

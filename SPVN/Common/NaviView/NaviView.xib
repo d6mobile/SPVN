@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NaviView" customModule="SPVN" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="FL9-Md-fYu" id="mLa-j4-dad"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="NZk-QA-baA"/>
+                <outlet property="rightBarButton" destination="ghd-8m-hHf" id="Ydc-K7-BeG"/>
+                <outlet property="titleLabel" destination="yC7-sQ-eyx" id="alf-Im-oPQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yC7-sQ-eyx">
+                    <rect key="frame" x="132" y="39.5" width="150" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Wf5-e0-2oC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FL9-Md-fYu" customClass="ButtonHit" customModule="SPVN" customModuleProvider="target">
+                    <rect key="frame" x="10" y="29.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="FL9-Md-fYu" secondAttribute="height" multiplier="1:1" id="ZL2-bj-5kT"/>
+                        <constraint firstAttribute="height" constant="20" id="iOG-GA-lzN"/>
+                    </constraints>
+                    <state key="normal" image="icon_back"/>
+                    <connections>
+                        <action selector="backDidTouch:" destination="-1" eventType="touchUpInside" id="Vyt-FK-VTQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghd-8m-hHf" customClass="ButtonHit" customModule="SPVN" customModuleProvider="target">
+                    <rect key="frame" x="373" y="27" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="2HJ-ps-voj"/>
+                        <constraint firstAttribute="width" secondItem="ghd-8m-hHf" secondAttribute="height" multiplier="1:1" id="RxT-B8-VBg"/>
+                    </constraints>
+                    <connections>
+                        <action selector="rightBarButtonDidTouch:" destination="-1" eventType="touchUpInside" id="Qbq-o2-D4m"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.054901960780000002" green="0.066666666669999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yC7-sQ-eyx" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-5" id="JdX-JX-l5j"/>
+                <constraint firstItem="FL9-Md-fYu" firstAttribute="centerY" secondItem="yC7-sQ-eyx" secondAttribute="centerY" id="PpC-13-WOc"/>
+                <constraint firstItem="ghd-8m-hHf" firstAttribute="centerY" secondItem="FL9-Md-fYu" secondAttribute="centerY" id="kEm-vj-Ahy"/>
+                <constraint firstAttribute="trailing" secondItem="ghd-8m-hHf" secondAttribute="trailing" constant="16" id="tIO-jJ-Suv"/>
+                <constraint firstItem="FL9-Md-fYu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="vMI-n0-hgp"/>
+                <constraint firstItem="yC7-sQ-eyx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zaZ-yt-NJ6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_back" width="25" height="25"/>
+    </resources>
+</document>

@@ -10,10 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosViewController" customModule="SPVN" customModuleProvider="target">
             <connections>
-                <outlet property="banner" destination="v9Y-Ck-SxJ" id="oqC-Ja-7uq"/>
                 <outlet property="collectionView" destination="vnO-x3-d13" id="Jup-IR-hs5"/>
-                <outlet property="heightBanner" destination="4Pa-4k-X0a" id="kjh-3j-5lR"/>
-                <outlet property="scrollView" destination="x2e-2V-zGz" id="MqV-iD-ttT"/>
+                <outlet property="heightBanner" destination="tiN-4f-sbo" id="8Ed-c3-sbI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,16 +21,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xmk-OI-FK8">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2e-2V-zGz">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eDh-LQ-tMs">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
                                     <subviews>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vnO-x3-d13">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x6K-BL-TbX">
                                                 <size key="itemSize" width="50" height="50"/>
@@ -54,25 +52,18 @@
                             <viewLayoutGuide key="safeArea" id="nAr-Jn-Zlj"/>
                             <viewLayoutGuide key="contentLayoutGuide" id="dC5-7H-QnW"/>
                             <viewLayoutGuide key="frameLayoutGuide" id="pv4-Aa-Gm1"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="TrT-cQ-ZTk"/>
+                            </connections>
                         </scrollView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9Y-Ck-SxJ">
-                            <rect key="frame" x="0.0" y="812" width="414" height="50"/>
-                            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="4Pa-4k-X0a"/>
-                            </constraints>
-                        </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="v9Y-Ck-SxJ" secondAttribute="bottom" id="EIe-wB-Vhp"/>
-                        <constraint firstItem="v9Y-Ck-SxJ" firstAttribute="top" secondItem="x2e-2V-zGz" secondAttribute="bottom" id="QaT-0V-ack"/>
                         <constraint firstItem="vnO-x3-d13" firstAttribute="height" secondItem="Xmk-OI-FK8" secondAttribute="height" id="Tkp-NU-BTe"/>
                         <constraint firstItem="x2e-2V-zGz" firstAttribute="leading" secondItem="Xmk-OI-FK8" secondAttribute="leading" id="Ttv-df-v0q"/>
                         <constraint firstAttribute="trailing" secondItem="x2e-2V-zGz" secondAttribute="trailing" id="cP7-SF-2d7"/>
+                        <constraint firstAttribute="bottom" secondItem="x2e-2V-zGz" secondAttribute="bottom" id="kMA-sQ-cRF"/>
                         <constraint firstItem="x2e-2V-zGz" firstAttribute="top" secondItem="Xmk-OI-FK8" secondAttribute="top" id="sz2-U4-qAt"/>
-                        <constraint firstItem="v9Y-Ck-SxJ" firstAttribute="leading" secondItem="Xmk-OI-FK8" secondAttribute="leading" id="xEj-HV-ZhI"/>
-                        <constraint firstAttribute="trailing" secondItem="v9Y-Ck-SxJ" secondAttribute="trailing" id="xxX-jR-UQd"/>
                     </constraints>
                 </view>
             </subviews>
@@ -81,7 +72,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xmk-OI-FK8" secondAttribute="trailing" id="LI2-cv-fb9"/>
                 <constraint firstItem="Xmk-OI-FK8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Wvk-uK-SfS"/>
                 <constraint firstItem="Xmk-OI-FK8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qLp-9W-FMK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Xmk-OI-FK8" secondAttribute="bottom" id="tiN-4f-sbo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Xmk-OI-FK8" secondAttribute="bottom" constant="50" id="tiN-4f-sbo"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="134.59821428571428"/>

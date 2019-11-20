@@ -87,6 +87,16 @@ public class AppLocker: UIViewController {
         }
     }
     
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
     static func deletePin() {
         AppLocker.valet.removeObject(forKey: ALConstants.kPincode)
     }
@@ -248,6 +258,7 @@ public class AppLocker: UIViewController {
             clearView()
             dismiss(animated: true, completion: nil)
         case ALConstants.button.face_touch_id.rawValue:
+            mode = .validate
             checkSensors()
         default:
             drawing(isNeedClear: false, tag: sender.tag, backgroundColor:UIColor(rgb: AppColor.shared.tintColorApp))
@@ -286,7 +297,8 @@ public extension AppLocker {
             locker.photoImageView.isHidden = true
         }
         
-        locker.modalPresentationStyle = style
-        root.present(locker, animated: animated, completion: nil)
+        let navi = BaseNaviController(rootViewController: locker)
+        navi.modalPresentationStyle = style
+        root.present(navi, animated: animated, completion: nil)
     }
 }

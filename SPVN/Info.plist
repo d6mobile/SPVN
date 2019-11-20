@@ -26,6 +26,10 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>SPVN needs access to the photo library to display new activity images.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Agree to let SPVN access the camera to used import images.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

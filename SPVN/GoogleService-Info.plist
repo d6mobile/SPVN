@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>767329604284-69hu0ktb0fm6s21ep9md41d0cmnrva6r.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.767329604284-69hu0ktb0fm6s21ep9md41d0cmnrva6r</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA5D5m2U4iqCjtbPsc6PW4k4x1MY4AKbD4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>767329604284</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.duydv.musicapps</string>
+	<key>PROJECT_ID</key>
+	<string>music-apps-977fb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>music-apps-977fb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:767329604284:ios:9c27cd70b29d7973</string>
+	<key>DATABASE_URL</key>
+	<string>https://music-apps-977fb.firebaseio.com</string>
+</dict>
+</plist>

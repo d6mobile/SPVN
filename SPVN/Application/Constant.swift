@@ -9,8 +9,10 @@
 import Foundation
 
 struct ConstantKey {
-    static let title = "title"
-    static let date  = "date"
+    static let title  = "title"
+    static let date   = "date"
+    static let photos = "Photos"
+    static let videos = "Videos"
 }
 
 struct UserDefaultKey {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,28 +19,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIH-UR-tNi">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgF-PC-iS0">
-                            <rect key="frame" x="0.0" y="812" width="414" height="50"/>
-                            <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="50" id="DZ3-qa-MlK"/>
-                            </constraints>
-                        </view>
-                    </subviews>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="bottom" secondItem="WgF-PC-iS0" secondAttribute="bottom" id="DTg-mg-RPQ"/>
-                        <constraint firstItem="WgF-PC-iS0" firstAttribute="leading" secondItem="CIH-UR-tNi" secondAttribute="leading" id="LQI-oG-e0S"/>
-                        <constraint firstAttribute="trailing" secondItem="WgF-PC-iS0" secondAttribute="trailing" id="pdB-Bh-Bdt"/>
-                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="CIH-UR-tNi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8iO-Vf-5HW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CIH-UR-tNi" secondAttribute="bottom" id="MpQ-wk-q9H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CIH-UR-tNi" secondAttribute="bottom" constant="50" id="MpQ-wk-q9H"/>
                 <constraint firstItem="CIH-UR-tNi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UiY-Zf-rdd"/>
                 <constraint firstItem="CIH-UR-tNi" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="scc-eg-ljR"/>
             </constraints>

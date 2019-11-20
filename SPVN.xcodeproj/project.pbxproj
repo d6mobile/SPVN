@@ -10,6 +10,15 @@
 		2F77F1112382A30D00D44634 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F77F1102382A30D00D44634 /* BaseViewController.swift */; };
 		2F77F1132382A32A00D44634 /* BaseNaviController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F77F1122382A32A00D44634 /* BaseNaviController.swift */; };
 		2F77F1172382A3E000D44634 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F77F1162382A3E000D44634 /* UIViewController+Extension.swift */; };
+		2F8EC1C4238CFBBD000FFB1D /* AlertBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EC1C3238CFBBD000FFB1D /* AlertBaseView.swift */; };
+		2F8EC1C9238D0398000FFB1D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EC1C8238D0398000FFB1D /* Logger.swift */; };
+		2F8EC1CB238D0445000FFB1D /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EC1CA238D0445000FFB1D /* Data+Extension.swift */; };
+		2F8EC1CE238D082F000FFB1D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EC1CD238D082F000FFB1D /* String+Extension.swift */; };
+		2F8EC1D0238D08DA000FFB1D /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EC1CF238D08DA000FFB1D /* FileModel.swift */; };
+		2F8EC258238D2083000FFB1D /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EC257238D2082000FFB1D /* Document.swift */; };
+		2F8EC25A238D281B000FFB1D /* PHAsset+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EC259238D281B000FFB1D /* PHAsset+Extension.swift */; };
+		2F8EC261238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8EC25F238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.swift */; };
+		2F8EC262238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F8EC260238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.xib */; };
 		2F9A04272384FB760011EA7F /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A04262384FB760011EA7F /* AppColor.swift */; };
 		2F9A0433238518FE0011EA7F /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A0432238518FE0011EA7F /* AlbumModel.swift */; };
 		2F9A04352385194F0011EA7F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9A04342385194F0011EA7F /* Constant.swift */; };
@@ -24,6 +33,15 @@
 		2FAA6DB42382B38E000C2FBF /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA6DB22382B38E000C2FBF /* ContactsViewController.xib */; };
 		2FAA6DB82382B3A5000C2FBF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAA6DB62382B3A5000C2FBF /* SettingViewController.swift */; };
 		2FAA6DB92382B3A5000C2FBF /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FAA6DB72382B3A5000C2FBF /* SettingViewController.xib */; };
+		2FAB92D62386229400A6E35B /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB92D52386229400A6E35B /* UIApplication+Extension.swift */; };
+		2FAB92D92386292B00A6E35B /* NaviView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB92D82386292B00A6E35B /* NaviView.swift */; };
+		2FAB92DB2386293C00A6E35B /* NaviView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB92DA2386293C00A6E35B /* NaviView.xib */; };
+		2FAB92DE23862A5800A6E35B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB92DD23862A5800A6E35B /* UIView+Extension.swift */; };
+		2FAB92E0238638AF00A6E35B /* ButtonHit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAB92DF238638AE00A6E35B /* ButtonHit.swift */; };
+		2FB255932391091D003868A0 /* RotateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FB255922391091D003868A0 /* RotateButton.m */; };
+		2FB255952391094C003868A0 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB255942391094C003868A0 /* CameraController.swift */; };
+		2FB2559A239109B5003868A0 /* SPVNCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB25598239109B5003868A0 /* SPVNCameraViewController.swift */; };
+		2FB2559B239109B5003868A0 /* SPVNCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FB25599239109B5003868A0 /* SPVNCameraViewController.xib */; };
 		2FB83A7C238289D200954884 /* AppLocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB83A7A238289D200954884 /* AppLocker.swift */; };
 		2FB83A7D238289D200954884 /* AppLocker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FB83A7B238289D200954884 /* AppLocker.xib */; };
 		2FB83A7F238289E100954884 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB83A7E238289E100954884 /* UI.swift */; };
@@ -47,6 +65,15 @@
 		2F77F1102382A30D00D44634 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2F77F1122382A32A00D44634 /* BaseNaviController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNaviController.swift; sourceTree = "<group>"; };
 		2F77F1162382A3E000D44634 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2F8EC1C3238CFBBD000FFB1D /* AlertBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBaseView.swift; sourceTree = "<group>"; };
+		2F8EC1C8238D0398000FFB1D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		2F8EC1CA238D0445000FFB1D /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		2F8EC1CD238D082F000FFB1D /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		2F8EC1CF238D08DA000FFB1D /* FileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
+		2F8EC257238D2082000FFB1D /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		2F8EC259238D281B000FFB1D /* PHAsset+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PHAsset+Extension.swift"; sourceTree = "<group>"; };
+		2F8EC25F238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F8EC260238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPhotosCollectionViewCell.xib; sourceTree = "<group>"; };
 		2F9A04262384FB760011EA7F /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		2F9A0432238518FE0011EA7F /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
 		2F9A04342385194F0011EA7F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -61,6 +88,16 @@
 		2FAA6DB22382B38E000C2FBF /* ContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
 		2FAA6DB62382B3A5000C2FBF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		2FAA6DB72382B3A5000C2FBF /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		2FAB92D52386229400A6E35B /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		2FAB92D82386292B00A6E35B /* NaviView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviView.swift; sourceTree = "<group>"; };
+		2FAB92DA2386293C00A6E35B /* NaviView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NaviView.xib; sourceTree = "<group>"; };
+		2FAB92DD23862A5800A6E35B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		2FAB92DF238638AE00A6E35B /* ButtonHit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonHit.swift; sourceTree = "<group>"; };
+		2FB255912391091D003868A0 /* RotateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateButton.h; sourceTree = "<group>"; };
+		2FB255922391091D003868A0 /* RotateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateButton.m; sourceTree = "<group>"; };
+		2FB255942391094C003868A0 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		2FB25598239109B5003868A0 /* SPVNCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPVNCameraViewController.swift; sourceTree = "<group>"; };
+		2FB25599239109B5003868A0 /* SPVNCameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SPVNCameraViewController.xib; sourceTree = "<group>"; };
 		2FB83A7A238289D200954884 /* AppLocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocker.swift; sourceTree = "<group>"; };
 		2FB83A7B238289D200954884 /* AppLocker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppLocker.xib; sourceTree = "<group>"; };
 		2FB83A7E238289E100954884 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
@@ -110,11 +147,15 @@
 		2F77F1152382A3B300D44634 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				2F8EC1CD238D082F000FFB1D /* String+Extension.swift */,
 				3108890A2382EFEA009ABF81 /* UIColor+Extension.swift */,
 				310889012382E9D6009ABF81 /* NSObject+Extension.swift */,
 				2F77F1162382A3E000D44634 /* UIViewController+Extension.swift */,
 				2FAA6D9C2382B16F000C2FBF /* NSLayoutConstraint+Extension.swift */,
 				2F9A043C238525800011EA7F /* UIImageView+Extension.swift */,
+				2FAB92D52386229400A6E35B /* UIApplication+Extension.swift */,
+				2FAB92DD23862A5800A6E35B /* UIView+Extension.swift */,
+				2F8EC1CA238D0445000FFB1D /* Data+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -126,11 +167,37 @@
 			path = Security;
 			sourceTree = "<group>";
 		};
+		2F8EC1C2238CFB8B000FFB1D /* AlertBaseView */ = {
+			isa = PBXGroup;
+			children = (
+				2F8EC1C3238CFBBD000FFB1D /* AlertBaseView.swift */,
+			);
+			path = AlertBaseView;
+			sourceTree = "<group>";
+		};
+		2F8EC1C7238D0398000FFB1D /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				2F8EC1C8238D0398000FFB1D /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		2F8EC256238D2082000FFB1D /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				2F8EC257238D2082000FFB1D /* Document.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
 		2F9A0428238515FA0011EA7F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				2F9A043823851CD20011EA7F /* AlbumCollectionViewCell.swift */,
 				2F9A043923851CD20011EA7F /* AlbumCollectionViewCell.xib */,
+				2F8EC25F238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.swift */,
+				2F8EC260238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -139,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				2F9A0432238518FE0011EA7F /* AlbumModel.swift */,
+				2F8EC1CF238D08DA000FFB1D /* FileModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +283,41 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		2FAB92D72386290800A6E35B /* NaviView */ = {
+			isa = PBXGroup;
+			children = (
+				2FAB92D82386292B00A6E35B /* NaviView.swift */,
+				2FAB92DA2386293C00A6E35B /* NaviView.xib */,
+			);
+			path = NaviView;
+			sourceTree = "<group>";
+		};
+		2FB255902391091D003868A0 /* RotateButton */ = {
+			isa = PBXGroup;
+			children = (
+				2FB255912391091D003868A0 /* RotateButton.h */,
+				2FB255922391091D003868A0 /* RotateButton.m */,
+			);
+			path = RotateButton;
+			sourceTree = "<group>";
+		};
+		2FB255962391098F003868A0 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				2FB2559723910998003868A0 /* Controller */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		2FB2559723910998003868A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FB25598239109B5003868A0 /* SPVNCameraViewController.swift */,
+				2FB25599239109B5003868A0 /* SPVNCameraViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2FB83A79238285BD00954884 /* AppLocker */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +333,13 @@
 				31000DF82382BFCF000F0434 /* Biometric.swift */,
 			);
 			path = Biometric;
+			sourceTree = "<group>";
+		};
+		31076F0423916E75005DF1A2 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		310889032382EBFF009ABF81 /* Managers */ = {
@@ -284,6 +394,14 @@
 		31AA05C123812E4600EC0925 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				31076F0423916E75005DF1A2 /* Lib */,
+				2FB255942391094C003868A0 /* CameraController.swift */,
+				2FB255902391091D003868A0 /* RotateButton */,
+				2F8EC256238D2082000FFB1D /* Document */,
+				2F8EC1C7238D0398000FFB1D /* Logger */,
+				2F8EC1C2238CFB8B000FFB1D /* AlertBaseView */,
+				2FAB92DF238638AE00A6E35B /* ButtonHit.swift */,
+				2FAB92D72386290800A6E35B /* NaviView */,
 				31000DF72382BFC0000F0434 /* Biometric */,
 				2F77F1152382A3B300D44634 /* Extension */,
 				2FB83A79238285BD00954884 /* AppLocker */,
@@ -291,6 +409,7 @@
 				2F77F1102382A30D00D44634 /* BaseViewController.swift */,
 				2F77F1122382A32A00D44634 /* BaseNaviController.swift */,
 				310889082382ED3D009ABF81 /* Helper.swift */,
+				2F8EC259238D281B000FFB1D /* PHAsset+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -298,6 +417,7 @@
 		31AA05C223812E6200EC0925 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2FB255962391098F003868A0 /* Camera */,
 				2FAA6D9E2382B2AD000C2FBF /* Photos */,
 				2FAA6D9F2382B2F9000C2FBF /* Videos */,
 				2FAA6DA02382B300000C2FBF /* Contacts */,
@@ -335,7 +455,7 @@
 				31AA05A523812DDD00EC0925 /* Sources */,
 				31AA05A623812DDD00EC0925 /* Frameworks */,
 				31AA05A723812DDD00EC0925 /* Resources */,
-				7B2B3F2867855CD3EB15F651 /* [CP] Embed Pods Frameworks */,
+				D95AC3975D97338C66FBCD59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,11 +508,14 @@
 				2F9A044123853B860011EA7F /* DetailPhotosViewController.xib in Resources */,
 				31AA05B923812DDE00EC0925 /* LaunchScreen.storyboard in Resources */,
 				2FAA6DB42382B38E000C2FBF /* ContactsViewController.xib in Resources */,
+				2FB2559B239109B5003868A0 /* SPVNCameraViewController.xib in Resources */,
 				31000DF12382BE20000F0434 /* PhotosViewController.xib in Resources */,
 				31AA05B623812DDE00EC0925 /* Assets.xcassets in Resources */,
+				2FAB92DB2386293C00A6E35B /* NaviView.xib in Resources */,
 				2FB83A7D238289D200954884 /* AppLocker.xib in Resources */,
 				2F9A043B23851CD20011EA7F /* AlbumCollectionViewCell.xib in Resources */,
 				31000DF62382BE50000F0434 /* VideosViewController.xib in Resources */,
+				2F8EC262238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +540,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7B2B3F2867855CD3EB15F651 /* [CP] Embed Pods Frameworks */ = {
+		D95AC3975D97338C66FBCD59 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,19 +564,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8EC1C9238D0398000FFB1D /* Logger.swift in Sources */,
 				2F9A043A23851CD20011EA7F /* AlbumCollectionViewCell.swift in Sources */,
+				2FB255932391091D003868A0 /* RotateButton.m in Sources */,
 				2F9A043723851A380011EA7F /* SPVNDefault.swift in Sources */,
 				2FAA6DB32382B38E000C2FBF /* ContactsViewController.swift in Sources */,
 				31000DF22382BE20000F0434 /* PhotosViewController.swift in Sources */,
 				2F77F1112382A30D00D44634 /* BaseViewController.swift in Sources */,
 				3108890B2382EFEA009ABF81 /* UIColor+Extension.swift in Sources */,
+				2FAB92D92386292B00A6E35B /* NaviView.swift in Sources */,
+				2FAB92E0238638AF00A6E35B /* ButtonHit.swift in Sources */,
+				2F8EC1C4238CFBBD000FFB1D /* AlertBaseView.swift in Sources */,
+				2F8EC1D0238D08DA000FFB1D /* FileModel.swift in Sources */,
 				2F77F1132382A32A00D44634 /* BaseNaviController.swift in Sources */,
 				31AA05AD23812DDD00EC0925 /* AppDelegate.swift in Sources */,
 				310889052382EC47009ABF81 /* MainFrame.swift in Sources */,
 				2F77F1172382A3E000D44634 /* UIViewController+Extension.swift in Sources */,
+				2FB255952391094C003868A0 /* CameraController.swift in Sources */,
+				2FB2559A239109B5003868A0 /* SPVNCameraViewController.swift in Sources */,
 				31000DF92382BFCF000F0434 /* Biometric.swift in Sources */,
+				2FAB92DE23862A5800A6E35B /* UIView+Extension.swift in Sources */,
+				2F8EC25A238D281B000FFB1D /* PHAsset+Extension.swift in Sources */,
+				2F8EC1CE238D082F000FFB1D /* String+Extension.swift in Sources */,
+				2F8EC1CB238D0445000FFB1D /* Data+Extension.swift in Sources */,
 				2F9A04352385194F0011EA7F /* Constant.swift in Sources */,
 				310889092382ED3D009ABF81 /* Helper.swift in Sources */,
+				2F8EC261238D2CC7000FFB1D /* DetailPhotosCollectionViewCell.swift in Sources */,
 				31000DF52382BE50000F0434 /* VideosViewController.swift in Sources */,
 				2F9A04272384FB760011EA7F /* AppColor.swift in Sources */,
 				2FB83A7F238289E100954884 /* UI.swift in Sources */,
@@ -463,7 +599,9 @@
 				2FB83A7C238289D200954884 /* AppLocker.swift in Sources */,
 				2F9A044023853B860011EA7F /* DetailPhotosViewController.swift in Sources */,
 				2F9A0433238518FE0011EA7F /* AlbumModel.swift in Sources */,
+				2F8EC258238D2083000FFB1D /* Document.swift in Sources */,
 				2FAA6DB82382B3A5000C2FBF /* SettingViewController.swift in Sources */,
+				2FAB92D62386229400A6E35B /* UIApplication+Extension.swift in Sources */,
 				310889022382E9D6009ABF81 /* NSObject+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -603,6 +741,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QG3WKA74A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPVN/Common/Lib/BSImagePicker/Frameworks",
+				);
 				INFOPLIST_FILE = SPVN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -622,6 +764,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QG3WKA74A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SPVN/Common/Lib/BSImagePicker/Frameworks",
+				);
 				INFOPLIST_FILE = SPVN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

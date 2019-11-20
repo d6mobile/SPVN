@@ -19,4 +19,5 @@ final class AppColor: AppColorProtocol {
     static let shared = AppColor()
 
     let tintColorApp = 0xe8aa00
+    let backgroundColor = UIColor(rgb: 0x0E1121)
 }

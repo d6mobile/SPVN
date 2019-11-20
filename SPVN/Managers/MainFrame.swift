@@ -22,7 +22,6 @@ final class MainFrame: MainFrameProtocol {
             let photosVC: PhotosViewController = PhotosViewController(nibName: PhotosViewController.className, bundle: nil)
             photosVC.navigationItem.title = "Albums"
             let naviPhotos = BaseNaviController(rootViewController: photosVC)
-            naviPhotos.imageView = UIImageView(image: UIImage(named: "icon_plus"))
             
             let tabbarItemPhotos = UITabBarItem(title: "Photos", image: nil, selectedImage: nil)
             naviPhotos.tabBarItem = tabbarItemPhotos
@@ -46,7 +45,7 @@ final class MainFrame: MainFrameProtocol {
             naviSetting.tabBarItem = tabbarItemSetting
             
             tabbar.tabBar.isTranslucent = false
-            tabbar.tabBar.barTintColor = UIColor(rgb: 0x0E1121)
+            tabbar.tabBar.barTintColor = AppColor.shared.backgroundColor
             tabbar.viewControllers = [naviPhotos, naviVideos, naviContacts, naviSetting]
             window.rootViewController = tabbar
             window.makeKeyAndVisible()

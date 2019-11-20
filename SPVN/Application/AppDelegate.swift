@@ -20,8 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let wd = window {
             AppCenter.shared.mainFrame.makeMainScreen(window: wd)
         }
-//        window?.rootViewController = SecurityViewController()
-//        window?.makeKeyAndVisible()
         return true
     }
     
