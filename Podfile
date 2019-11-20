@@ -7,5 +7,7 @@ target 'SPVN' do
 
   # Pods for SPVN
     pod 'Valet'
+    pod 'SCLAlertView'
+    pod "ViewAnimator"
 
 end

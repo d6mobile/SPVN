@@ -56,7 +56,7 @@ public class AppLocker: UIViewController {
     
     static let valet = Valet.valet(with: Identifier(nonEmpty: "Druidia")!, accessibility: .whenUnlockedThisDeviceOnly)
     // MARK: - Pincode
-    let isEmptyPinCode = (AppLocker.valet.string(forKey: ALConstants.kPincode) != nil) ? false : true
+    static let isEmptyPinCode = (AppLocker.valet.string(forKey: ALConstants.kPincode) != nil) ? false : true
     private let context = LAContext()
     private var pin = "" // Entered pincode
     private var reservedPin = "" // Reserve pincode for confirm
@@ -81,12 +81,13 @@ public class AppLocker: UIViewController {
         default:
             break
         }
+        self.sensorButton.isHidden = (AppLocker.valet.string(forKey: ALConstants.kPincode) != nil) ? false : true
         if UIDevice.current.userInterfaceIdiom == .phone {
             self.view.layoutIfNeeded()
         }
     }
     
-    func deletePin() {
+    static func deletePin() {
         AppLocker.valet.removeObject(forKey: ALConstants.kPincode)
     }
     
@@ -120,7 +121,7 @@ public class AppLocker: UIViewController {
         if let view = pinView {
             view.layer.cornerRadius = view.frame.height/2
             view.clipsToBounds = true
-            view.layer.borderColor = isNeedClear ? UIColor(red: 232.0/155, green: 170.0/255, blue: 0, alpha: 1).cgColor : backgroundColor.cgColor
+            view.layer.borderColor = isNeedClear ? UIColor(rgb: AppColor.shared.tintColorApp).cgColor : backgroundColor.cgColor
         }
         
         UIView.animate(withDuration: ALConstants.duration, animations: {
@@ -175,9 +176,6 @@ public class AppLocker: UIViewController {
     }
     
     private func dismissAppLocker() {
-        if let wd = appDelegate().window, wd.rootViewController is SecurityViewController {
-            AppCenter.shared.mainFrame.makeMainScreen(window: wd)
-        }
         dismiss(animated: true, completion: {
             DispatchQueue.main.async {
                 appDelegate().isLocked = false
@@ -198,7 +196,7 @@ public class AppLocker: UIViewController {
         pinIndicators.forEach { view in
             view.shake(delegate: self)
             view.backgroundColor = .white
-            view.layer.borderColor = UIColor(red: 232.0/155, green: 170.0/255, blue: 0, alpha: 1).cgColor
+            view.layer.borderColor = UIColor(rgb: AppColor.shared.tintColorApp).cgColor
         }
         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
     }
@@ -210,7 +208,7 @@ public class AppLocker: UIViewController {
             UIView.animate(withDuration: ALConstants.duration, animations: {
                 view.backgroundColor = .white
                 guard isEmpty else { return }
-                view.layer.borderColor = UIColor(red: 232.0/155, green: 170.0/255, blue: 0, alpha: 1).cgColor
+                view.layer.borderColor = UIColor(rgb: AppColor.shared.tintColorApp).cgColor
             })
         }
     }
@@ -252,7 +250,7 @@ public class AppLocker: UIViewController {
         case ALConstants.button.face_touch_id.rawValue:
             checkSensors()
         default:
-            drawing(isNeedClear: false, tag: sender.tag, backgroundColor: UIColor(red: 232.0/155, green: 170.0/255, blue: 0, alpha: 1))
+            drawing(isNeedClear: false, tag: sender.tag, backgroundColor:UIColor(rgb: AppColor.shared.tintColorApp))
         }
     }
 }

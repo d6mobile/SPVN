@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-SPVN/Pods-SPVN-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework
 ${BUILT_PRODUCTS_DIR}/Valet/Valet.framework
+${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework

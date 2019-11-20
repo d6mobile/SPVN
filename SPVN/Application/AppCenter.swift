@@ -18,6 +18,7 @@ final class AppCenter: AppCenterProtocol {
     static let shared = AppCenter()
     
     private (set) var mainFrame: MainFrame!
+    private (set) var spvn: SPVNDefault!
     
     init() {
         
@@ -28,5 +29,6 @@ final class AppCenter: AppCenterProtocol {
     private func setupAppCenter() {
         
         mainFrame   = MainFrame()
+        spvn = SPVNDefault()
     }
 }

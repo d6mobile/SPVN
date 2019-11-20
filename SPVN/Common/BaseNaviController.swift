@@ -8,8 +8,8 @@
 
 import UIKit
 
-protocol BaseNaviControllerProtocol {
-    
+@objc protocol BaseNaviControllerProtocol {
+    func imageViewResizeDidTouch()
 }
 
 extension BaseNaviController {
@@ -36,6 +36,7 @@ extension BaseNaviController {
 
 class BaseNaviController: UINavigationController {
     
+    var delegateBaseNavi: BaseNaviControllerProtocol?
     var imageView: UIImageView! {
         didSet {
             setupUI()
@@ -49,7 +50,7 @@ class BaseNaviController: UINavigationController {
         }
     }
     var shoulResize: Bool?
-    var darkMode = false
+//    var darkMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,8 +65,8 @@ class BaseNaviController: UINavigationController {
         let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         UINavigationBar.appearance().largeTitleTextAttributes = textAttributes
         navigationBar.titleTextAttributes = textAttributes
-        navigationBar.setBackgroundImage(UIImage(), for: .default)
-        navigationBar.shadowImage = UIImage()
+        navigationBar.setBackgroundImage(UIImage(color: UIColor(red: 54.0/255, green: 55.0/255, blue: 70.0/255, alpha: 1)), for: .default)
+        navigationBar.shadowImage = UIImage(color: UIColor(red: 54.0/255, green: 55.0/255, blue: 70.0/255, alpha: 1))
         navigationBar.isTranslucent = true
     }
     
@@ -87,10 +88,14 @@ class BaseNaviController: UINavigationController {
             imageView.heightAnchor.constraint(equalToConstant: Const.ImageSizeForLargeState),
             imageView.widthAnchor.constraint(equalTo: imageView.heightAnchor)
         ])
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.imageRightNaviTapped(tapGestureRecognizer:)))
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(tapGestureRecognizer)
     }
     
-    private func creatRightBarButton(image: UIImageView) {
-        
+    @objc private func imageRightNaviTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        delegateBaseNavi?.imageViewResizeDidTouch()
     }
     
     private func observeAndHandleOrientationMode() {
@@ -153,8 +158,12 @@ class BaseNaviController: UINavigationController {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return darkMode ? .default : .lightContent
+          return .lightContent
     }
+    
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return darkMode ? .default : .lightContent
+//    }
 }
 
 

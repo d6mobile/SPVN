@@ -3,38 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		033C66799AD19BE4821C4696C1DA8224 /* MigrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24712279E69718F92A307E2D238AC309 /* MigrationResult.swift */; };
-		0C307480EEC123ECF3EBEA7CA1BB7120 /* Pods-SPVN-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC30D6F80DCA7650FD34B5822B43DDF /* Pods-SPVN-dummy.m */; };
-		1A715B1C93C62E23E70289D14A1A28EB /* SecureEnclave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0631E4CB96A2ABE107CFFFBCF5984DE5 /* SecureEnclave.swift */; };
-		27282C3F5BC8CF1CB58A3241AB868CE2 /* Valet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07F9609AA9728F3DD6570794519F61CE /* Valet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2EA7D8B146651F0C71DD126CA37E350A /* Pods-SPVN-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3C18F1DE5D73CD732BB2EDBD46EB8C /* Pods-SPVN-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FF226020ED8F137DDB1BB62C50BB32C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0533C120D55C17237EA959F1765293 /* Service.swift */; };
-		366AB43B500AFF9975634A892432AA19 /* SinglePromptSecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C19BC374417B44E6B66F9EC89A3E99 /* SinglePromptSecureEnclaveValet.swift */; };
-		3B7C55A5A459F9D0493BAA66C3C7E5F9 /* CloudAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C60A60BC2C9C7F7C36283A1B00AEE1 /* CloudAccessibility.swift */; };
-		43F8D09A69C8EEFD5491C9B10F964D94 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCBD5D71E4081B97F43E8F25F83A976 /* Keychain.swift */; };
+		033C66799AD19BE4821C4696C1DA8224 /* MigrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217517319914FF88BA5A6FF8F426A97B /* MigrationResult.swift */; };
+		1A715B1C93C62E23E70289D14A1A28EB /* SecureEnclave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB0E260E86EE48C78856EB560AA9F1E /* SecureEnclave.swift */; };
+		270FB360BC07440B725D3307295C0309 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
+		27282C3F5BC8CF1CB58A3241AB868CE2 /* Valet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD239B076E2E733120C6158763D40DB /* Valet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		297F85DE0BF70E0BBCFC55A4EABE3AF7 /* ViewAnimator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C9AFD883C26E8DA406644CF7B82919 /* ViewAnimator-dummy.m */; };
+		298E4F1A7F3DFD1F512EF7561C18CD20 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4E1D0BB7F8AA46D61118CD2893E311 /* SCLAlertView.swift */; };
+		2AC30876C833990D744C30FF47B32EE8 /* UICollectionView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB138A99C4EAB6C6081C76BA9D8DA8 /* UICollectionView + ViewAnimator.swift */; };
+		2FF226020ED8F137DDB1BB62C50BB32C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D76404065AECD56C940372BEDA86F /* Service.swift */; };
+		366AB43B500AFF9975634A892432AA19 /* SinglePromptSecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A50301B988A3A84A93E65734E9A57D /* SinglePromptSecureEnclaveValet.swift */; };
+		3B7C55A5A459F9D0493BAA66C3C7E5F9 /* CloudAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829EA28F58FC7263FE2973EAD8760B7 /* CloudAccessibility.swift */; };
+		3D24A0293788B6740CA06D127A930F02 /* UITableView + ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A44B8C742E1F320DA6DF051AC887DD /* UITableView + ViewAnimator.swift */; };
+		43F8D09A69C8EEFD5491C9B10F964D94 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA12263539FB7D910281D2A02B3F29F /* Keychain.swift */; };
+		44A41A19C4EBB3E69F800EF54C82A661 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A756E73B2D1D9708B6F57C1F8438B73 /* Direction.swift */; };
+		46935F12196B8113019740EA716549BB /* ViewAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2E4C9CC2CCBC6CCB45D0FE916E81F3 /* ViewAnimator.swift */; };
 		48FBAED4D003B9779BE24DE1B2FA7B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
-		6FE66CEC823B80506CC15EB8A05D3A9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
-		925955507EA0F01291FFF4289FBA2E85 /* SwiftCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0695A6D0576B1B5B5E86C83CA4181 /* SwiftCompatibility.swift */; };
-		B3CD1221E7984FCEA32EF3D179724DEE /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1294A3928E020BBD2638865912D6669 /* ErrorHandler.swift */; };
-		B9AF748B51CF9AE228F7B0E5D45003FF /* Valet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C5BC5B2AD6695F4DC26D4935F2519 /* Valet.swift */; };
-		C4A9DB55242D082BF32D7A6986E24D52 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4428E158792E86DCC912C7F4457F2C /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C94EC9D13F57E5B644A0CC4F1D507585 /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA094038BE40372C92575811E1AE227 /* Valet-dummy.m */; };
-		D0F08DC093499419D6C7005D17A7DB0B /* SecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FE704A2E279DD06E15EAA4B93ED7C /* SecItem.swift */; };
-		D6B31CCE09C9319E51F43E6724020389 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8FD9D0D3B119DBFD6EF0980F0B121 /* Identifier.swift */; };
-		D7890C56E066C288E0BB95E71416E23E /* SecureEnclaveAccessControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B52917B2C8225B04B415BE72F0C9CF /* SecureEnclaveAccessControl.swift */; };
-		E445AF96CF8E69E2591A6C9934EEEE6D /* SecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79AA4EC132E0E446D83B4658F7CA488A /* SecureEnclaveValet.swift */; };
+		5394C4DCB14CD55B19D088F07382AE14 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC55ED4741B038D7958E06B515C98590 /* SCLExtensions.swift */; };
+		58CDDC315D072611DC4E0E8D7B2B399B /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C385CC1F311BE1DF30B1CED6C9E09C0 /* Animation.swift */; };
+		69437A6AA2866A54AACCCEA857664F47 /* SCLAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 271C8E6E6CA50251BB669CEDBC455927 /* SCLAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C72E988C04C3F87D6C0306DF85C4705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
+		86E16112E3DA618AA6046E09E11B1FD5 /* ViewAnimator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9922D95C788369B152D8D1A3309C8260 /* ViewAnimator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		925955507EA0F01291FFF4289FBA2E85 /* SwiftCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F98804D2BCBBF1A54B94499B172F04E /* SwiftCompatibility.swift */; };
+		A00531195294693CDDE72B9C9523CA66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */; };
+		B3CD1221E7984FCEA32EF3D179724DEE /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A680824D2D0C0BAD7E11E78EA273F8D2 /* ErrorHandler.swift */; };
+		B98733C303FFBD5D956071ED6940935F /* SCLAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A642BC7D272AE224961FC44EB44BA26 /* SCLAlertView-dummy.m */; };
+		B9AF748B51CF9AE228F7B0E5D45003FF /* Valet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E512F66DC3F71C9F41C226D51D1DE025 /* Valet.swift */; };
+		BD6DCC1280FBF8802E8256E27E72608D /* ViewAnimatorConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E08CD7A8A8BE8E002D284B45B5034B /* ViewAnimatorConfig.swift */; };
+		C4A9DB55242D082BF32D7A6986E24D52 /* Valet.h in Headers */ = {isa = PBXBuildFile; fileRef = BFABD3A852AAB72E8A42E4AE8105B33F /* Valet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6A003E6C85A78D35FEB7F82E73B7A5E /* Pods-SPVN-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3C18F1DE5D73CD732BB2EDBD46EB8C /* Pods-SPVN-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C94EC9D13F57E5B644A0CC4F1D507585 /* Valet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CA2C394C55491B184131CEE753F3FB /* Valet-dummy.m */; };
+		D0F08DC093499419D6C7005D17A7DB0B /* SecItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28A170A1B6A822962CAAAEAA30C0D67 /* SecItem.swift */; };
+		D6B31CCE09C9319E51F43E6724020389 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88A20345EB4490FC55F09760BF3895E /* Identifier.swift */; };
+		D7890C56E066C288E0BB95E71416E23E /* SecureEnclaveAccessControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9180871CF60A2D483A135D554C9CBC /* SecureEnclaveAccessControl.swift */; };
+		E2D6F20FF997BE3D030BD5774F499F4E /* Pods-SPVN-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC30D6F80DCA7650FD34B5822B43DDF /* Pods-SPVN-dummy.m */; };
+		E445AF96CF8E69E2591A6C9934EEEE6D /* SecureEnclaveValet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25431C6B463DBB3308B33572F114595 /* SecureEnclaveValet.swift */; };
 		E72AE1A8131ACE1E59C358AC121B4FF0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C6FBEEEFA5DEBF6E6E83512D4F03EE /* Security.framework */; };
-		F353F5BBDE107411FE712CC49B91998D /* KeychainQueryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D141206113D1C523F1945300DDAC4F02 /* KeychainQueryConvertible.swift */; };
-		FAB1AFAAADA361DD9C7BB83CF9087835 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC58FB34F99FE4260B5E4D400771AEDA /* Configuration.swift */; };
-		FE2A5DC4696B856502BC549738EB2450 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF452E5DFF412E4576737131522BD5 /* Accessibility.swift */; };
+		F353F5BBDE107411FE712CC49B91998D /* KeychainQueryConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0802313A6CC2C128406A8B73415373B /* KeychainQueryConvertible.swift */; };
+		FAB1AFAAADA361DD9C7BB83CF9087835 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C75A3CEE27523C953443434E1C494 /* Configuration.swift */; };
+		FB5B2EF00978168F84353DD89B808567 /* AnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B594CECBDBDDACA8B38740D1DA745C1 /* AnimationType.swift */; };
+		FE2A5DC4696B856502BC549738EB2450 /* Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794AADC5F42C47BF41935E8843150EBA /* Accessibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4A7827065A7B3198CDABAB76371EB2E1 /* PBXContainerItemProxy */ = {
+		03A33A257EE116282E7EA6113B0267C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91BFC2827E7E6E2B51AB2CFF58AC6317;
+			remoteInfo = ViewAnimator;
+		};
+		67AAA795AB409999BD536C815331F018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0152970E5467A11DF89E7D22C63B47C;
+			remoteInfo = SCLAlertView;
+		};
+		881D536BBD4762BE14E09F51EAE856E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -44,51 +73,82 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0631E4CB96A2ABE107CFFFBCF5984DE5 /* SecureEnclave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclave.swift; path = Sources/Valet/SecureEnclave.swift; sourceTree = "<group>"; };
-		07F9609AA9728F3DD6570794519F61CE /* Valet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-umbrella.h"; sourceTree = "<group>"; };
-		24712279E69718F92A307E2D238AC309 /* MigrationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MigrationResult.swift; path = Sources/Valet/MigrationResult.swift; sourceTree = "<group>"; };
+		0B594CECBDBDDACA8B38740D1DA745C1 /* AnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationType.swift; path = ViewAnimator/Classes/Models/AnimationType.swift; sourceTree = "<group>"; };
+		217517319914FF88BA5A6FF8F426A97B /* MigrationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MigrationResult.swift; path = Sources/Valet/MigrationResult.swift; sourceTree = "<group>"; };
 		25BC8565916CDBB7EBD6B9E2E7DF243E /* Pods-SPVN-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPVN-Info.plist"; sourceTree = "<group>"; };
-		2DA094038BE40372C92575811E1AE227 /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
-		328C5BC5B2AD6695F4DC26D4935F2519 /* Valet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Valet.swift; path = Sources/Valet/Valet.swift; sourceTree = "<group>"; };
-		3A16558C7C5DDAD3C191CD0C059D74E8 /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
+		271C8E6E6CA50251BB669CEDBC455927 /* SCLAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-umbrella.h"; sourceTree = "<group>"; };
+		2E69A1C2C1E3B888FCA981F2E3F90C74 /* Valet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Valet-Info.plist"; sourceTree = "<group>"; };
+		32A44B8C742E1F320DA6DF051AC887DD /* UITableView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView + ViewAnimator.swift"; path = "ViewAnimator/Classes/Extensions/UITableView + ViewAnimator.swift"; sourceTree = "<group>"; };
+		3A642BC7D272AE224961FC44EB44BA26 /* SCLAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCLAlertView-dummy.m"; sourceTree = "<group>"; };
+		3A8C75A3CEE27523C953443434E1C494 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Valet/Internal/Configuration.swift; sourceTree = "<group>"; };
+		3CF36714B7A1DA2E4BF8282F4B550F9D /* SCLAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCLAlertView.modulemap; sourceTree = "<group>"; };
 		40C6FBEEEFA5DEBF6E6E83512D4F03EE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		41E08EF0050BA4528A60B596AEA23483 /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
 		5007BCBB9A7325F73098FA0101247DB0 /* Pods-SPVN-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SPVN-frameworks.sh"; sourceTree = "<group>"; };
+		5B9180871CF60A2D483A135D554C9CBC /* SecureEnclaveAccessControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveAccessControl.swift; path = Sources/Valet/SecureEnclaveAccessControl.swift; sourceTree = "<group>"; };
+		5FB0E260E86EE48C78856EB560AA9F1E /* SecureEnclave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclave.swift; path = Sources/Valet/SecureEnclave.swift; sourceTree = "<group>"; };
 		6E3965947178FD906D982BC49CB02A33 /* Pods_SPVN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SPVN.framework; path = "Pods-SPVN.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		713A2CDDF3C20AAFB9C70C66F3ABB6EF /* Pods-SPVN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPVN.release.xcconfig"; sourceTree = "<group>"; };
-		79AA4EC132E0E446D83B4658F7CA488A /* SecureEnclaveValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveValet.swift; path = Sources/Valet/SecureEnclaveValet.swift; sourceTree = "<group>"; };
+		773D76404065AECD56C940372BEDA86F /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Sources/Valet/Internal/Service.swift; sourceTree = "<group>"; };
+		794AADC5F42C47BF41935E8843150EBA /* Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Accessibility.swift; path = Sources/Valet/Accessibility.swift; sourceTree = "<group>"; };
 		7C3C18F1DE5D73CD732BB2EDBD46EB8C /* Pods-SPVN-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SPVN-umbrella.h"; sourceTree = "<group>"; };
-		7CFF452E5DFF412E4576737131522BD5 /* Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Accessibility.swift; path = Sources/Valet/Accessibility.swift; sourceTree = "<group>"; };
-		87C19BC374417B44E6B66F9EC89A3E99 /* SinglePromptSecureEnclaveValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SinglePromptSecureEnclaveValet.swift; path = Sources/Valet/SinglePromptSecureEnclaveValet.swift; sourceTree = "<group>"; };
-		8A364D44D2520DACBB17FF90AAA1B11C /* Valet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Valet.modulemap; sourceTree = "<group>"; };
-		92B8FD9D0D3B119DBFD6EF0980F0B121 /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Sources/Valet/Identifier.swift; sourceTree = "<group>"; };
+		7E86774E6866B4B4EE69568B75D16AA2 /* SCLAlertView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCLAlertView.xcconfig; sourceTree = "<group>"; };
+		8A756E73B2D1D9708B6F57C1F8438B73 /* Direction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Direction.swift; path = ViewAnimator/Classes/Models/Direction.swift; sourceTree = "<group>"; };
+		8C385CC1F311BE1DF30B1CED6C9E09C0 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = ViewAnimator/Classes/Protocols/Animation.swift; sourceTree = "<group>"; };
+		8CD239B076E2E733120C6158763D40DB /* Valet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-umbrella.h"; sourceTree = "<group>"; };
+		95C9AFD883C26E8DA406644CF7B82919 /* ViewAnimator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ViewAnimator-dummy.m"; sourceTree = "<group>"; };
+		962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCLAlertView.framework; path = SCLAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9922D95C788369B152D8D1A3309C8260 /* ViewAnimator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-umbrella.h"; sourceTree = "<group>"; };
+		99CA2C394C55491B184131CEE753F3FB /* Valet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Valet-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DCBD5D71E4081B97F43E8F25F83A976 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Sources/Valet/Internal/Keychain.swift; sourceTree = "<group>"; };
-		9E4428E158792E86DCC912C7F4457F2C /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Sources/Valet/Valet.h; sourceTree = "<group>"; };
-		A89FE704A2E279DD06E15EAA4B93ED7C /* SecItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecItem.swift; path = Sources/Valet/Internal/SecItem.swift; sourceTree = "<group>"; };
+		9E2E4C9CC2CCBC6CCB45D0FE916E81F3 /* ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimator.swift; path = ViewAnimator/Classes/ViewAnimator.swift; sourceTree = "<group>"; };
+		9EA12263539FB7D910281D2A02B3F29F /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Sources/Valet/Internal/Keychain.swift; sourceTree = "<group>"; };
+		9F98804D2BCBBF1A54B94499B172F04E /* SwiftCompatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftCompatibility.swift; path = Sources/Valet/SwiftCompatibility.swift; sourceTree = "<group>"; };
+		A28A170A1B6A822962CAAAEAA30C0D67 /* SecItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecItem.swift; path = Sources/Valet/Internal/SecItem.swift; sourceTree = "<group>"; };
+		A3CF3FCC078AE89DF7A46B7993907572 /* ViewAnimator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ViewAnimator-Info.plist"; sourceTree = "<group>"; };
+		A680824D2D0C0BAD7E11E78EA273F8D2 /* ErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorHandler.swift; path = Sources/Valet/ErrorHandler.swift; sourceTree = "<group>"; };
+		A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ViewAnimator.framework; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Valet.framework; path = Valet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3B52917B2C8225B04B415BE72F0C9CF /* SecureEnclaveAccessControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveAccessControl.swift; path = Sources/Valet/SecureEnclaveAccessControl.swift; sourceTree = "<group>"; };
-		B5D0695A6D0576B1B5B5E86C83CA4181 /* SwiftCompatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftCompatibility.swift; path = Sources/Valet/SwiftCompatibility.swift; sourceTree = "<group>"; };
+		B71D776902B9D90B61D331BD1D92691A /* ViewAnimator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ViewAnimator-prefix.pch"; sourceTree = "<group>"; };
+		BAFE8BF78860A7D4CDA833D31D8D9BD8 /* SCLAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCLAlertView-Info.plist"; sourceTree = "<group>"; };
+		BD4E1D0BB7F8AA46D61118CD2893E311 /* SCLAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLAlertView.swift; path = SCLAlertView/SCLAlertView.swift; sourceTree = "<group>"; };
 		BD92307126158B722656F5F2DF763478 /* Pods-SPVN.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SPVN.modulemap"; sourceTree = "<group>"; };
-		BED614E2C0F0DFC3DBB1A9782FBC2A5E /* Valet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Valet-Info.plist"; sourceTree = "<group>"; };
+		BF2B9288B8C89F4CF601F45A5EF5A92A /* ViewAnimator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ViewAnimator.xcconfig; sourceTree = "<group>"; };
+		BFABD3A852AAB72E8A42E4AE8105B33F /* Valet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Valet.h; path = Sources/Valet/Valet.h; sourceTree = "<group>"; };
+		C0A50301B988A3A84A93E65734E9A57D /* SinglePromptSecureEnclaveValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SinglePromptSecureEnclaveValet.swift; path = Sources/Valet/SinglePromptSecureEnclaveValet.swift; sourceTree = "<group>"; };
+		C52C34C85E5CE97C4A2D77FDD41C2176 /* Valet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Valet-prefix.pch"; sourceTree = "<group>"; };
+		C5CB138A99C4EAB6C6081C76BA9D8DA8 /* UICollectionView + ViewAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView + ViewAnimator.swift"; path = "ViewAnimator/Classes/Extensions/UICollectionView + ViewAnimator.swift"; sourceTree = "<group>"; };
 		CD8CCF467C5D26268EB7255039F27349 /* Pods-SPVN-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SPVN-acknowledgements.plist"; sourceTree = "<group>"; };
-		D141206113D1C523F1945300DDAC4F02 /* KeychainQueryConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainQueryConvertible.swift; path = Sources/Valet/KeychainQueryConvertible.swift; sourceTree = "<group>"; };
+		CFA444562AE2C15E2721B139E755C411 /* Valet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Valet.xcconfig; sourceTree = "<group>"; };
+		D0802313A6CC2C128406A8B73415373B /* KeychainQueryConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainQueryConvertible.swift; path = Sources/Valet/KeychainQueryConvertible.swift; sourceTree = "<group>"; };
 		D644AD63D61B1B3DE15D322865AB2389 /* Pods-SPVN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SPVN.debug.xcconfig"; sourceTree = "<group>"; };
-		DC58FB34F99FE4260B5E4D400771AEDA /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Valet/Internal/Configuration.swift; sourceTree = "<group>"; };
-		ED0533C120D55C17237EA959F1765293 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Sources/Valet/Internal/Service.swift; sourceTree = "<group>"; };
+		D6E08CD7A8A8BE8E002D284B45B5034B /* ViewAnimatorConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewAnimatorConfig.swift; path = ViewAnimator/Classes/ViewAnimatorConfig.swift; sourceTree = "<group>"; };
+		D88A20345EB4490FC55F09760BF3895E /* Identifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Sources/Valet/Identifier.swift; sourceTree = "<group>"; };
+		E25431C6B463DBB3308B33572F114595 /* SecureEnclaveValet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureEnclaveValet.swift; path = Sources/Valet/SecureEnclaveValet.swift; sourceTree = "<group>"; };
+		E3B90C13B20606BCAB13BFDACCADD87D /* SCLAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCLAlertView-prefix.pch"; sourceTree = "<group>"; };
+		E512F66DC3F71C9F41C226D51D1DE025 /* Valet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Valet.swift; path = Sources/Valet/Valet.swift; sourceTree = "<group>"; };
+		EC55ED4741B038D7958E06B515C98590 /* SCLExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCLExtensions.swift; path = SCLAlertView/SCLExtensions.swift; sourceTree = "<group>"; };
 		EF0537674118F909E1B2AFD9940729FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F1294A3928E020BBD2638865912D6669 /* ErrorHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorHandler.swift; path = Sources/Valet/ErrorHandler.swift; sourceTree = "<group>"; };
-		F6C60A60BC2C9C7F7C36283A1B00AEE1 /* CloudAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudAccessibility.swift; path = Sources/Valet/CloudAccessibility.swift; sourceTree = "<group>"; };
+		F24D9E99C9749432740D3745E85746D5 /* ViewAnimator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ViewAnimator.modulemap; sourceTree = "<group>"; };
+		F829EA28F58FC7263FE2973EAD8760B7 /* CloudAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CloudAccessibility.swift; path = Sources/Valet/CloudAccessibility.swift; sourceTree = "<group>"; };
+		F8CC2ED63FDE532AAC7A669DF4A7F8A3 /* Valet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Valet.modulemap; sourceTree = "<group>"; };
 		FE15DE5B42F8C75CAC8A13B76CFEE404 /* Pods-SPVN-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SPVN-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FFC30D6F80DCA7650FD34B5822B43DDF /* Pods-SPVN-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SPVN-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0FF0C6AF84DEF5B7A113FB352BEAA347 /* Frameworks */ = {
+		03B5D362B75E1F27D5669A43D702BC8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FE66CEC823B80506CC15EB8A05D3A9D /* Foundation.framework in Frameworks */,
+				A00531195294693CDDE72B9C9523CA66 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8101AA9C4D52EB68229926CDD62B6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270FB360BC07440B725D3307295C0309 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +161,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2F8CEE48F5E5B43BF343771890BDE66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C72E988C04C3F87D6C0306DF85C4705 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14522E7102FC51BBCA7BE64213AF9AD5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F24D9E99C9749432740D3745E85746D5 /* ViewAnimator.modulemap */,
+				BF2B9288B8C89F4CF601F45A5EF5A92A /* ViewAnimator.xcconfig */,
+				95C9AFD883C26E8DA406644CF7B82919 /* ViewAnimator-dummy.m */,
+				A3CF3FCC078AE89DF7A46B7993907572 /* ViewAnimator-Info.plist */,
+				B71D776902B9D90B61D331BD1D92691A /* ViewAnimator-prefix.pch */,
+				9922D95C788369B152D8D1A3309C8260 /* ViewAnimator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ViewAnimator";
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +219,76 @@
 			path = "Target Support Files/Pods-SPVN";
 			sourceTree = "<group>";
 		};
+		1DDE3AD85F1B4CD7745C7BF1B00110B7 /* Valet */ = {
+			isa = PBXGroup;
+			children = (
+				794AADC5F42C47BF41935E8843150EBA /* Accessibility.swift */,
+				F829EA28F58FC7263FE2973EAD8760B7 /* CloudAccessibility.swift */,
+				3A8C75A3CEE27523C953443434E1C494 /* Configuration.swift */,
+				A680824D2D0C0BAD7E11E78EA273F8D2 /* ErrorHandler.swift */,
+				D88A20345EB4490FC55F09760BF3895E /* Identifier.swift */,
+				9EA12263539FB7D910281D2A02B3F29F /* Keychain.swift */,
+				D0802313A6CC2C128406A8B73415373B /* KeychainQueryConvertible.swift */,
+				217517319914FF88BA5A6FF8F426A97B /* MigrationResult.swift */,
+				A28A170A1B6A822962CAAAEAA30C0D67 /* SecItem.swift */,
+				5FB0E260E86EE48C78856EB560AA9F1E /* SecureEnclave.swift */,
+				5B9180871CF60A2D483A135D554C9CBC /* SecureEnclaveAccessControl.swift */,
+				E25431C6B463DBB3308B33572F114595 /* SecureEnclaveValet.swift */,
+				773D76404065AECD56C940372BEDA86F /* Service.swift */,
+				C0A50301B988A3A84A93E65734E9A57D /* SinglePromptSecureEnclaveValet.swift */,
+				9F98804D2BCBBF1A54B94499B172F04E /* SwiftCompatibility.swift */,
+				BFABD3A852AAB72E8A42E4AE8105B33F /* Valet.h */,
+				E512F66DC3F71C9F41C226D51D1DE025 /* Valet.swift */,
+				6590CF7E90850471E7131DFEF33F5676 /* Support Files */,
+			);
+			name = Valet;
+			path = Valet;
+			sourceTree = "<group>";
+		};
+		48168D88192073A6D724CDA3B361A3C1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CF36714B7A1DA2E4BF8282F4B550F9D /* SCLAlertView.modulemap */,
+				7E86774E6866B4B4EE69568B75D16AA2 /* SCLAlertView.xcconfig */,
+				3A642BC7D272AE224961FC44EB44BA26 /* SCLAlertView-dummy.m */,
+				BAFE8BF78860A7D4CDA833D31D8D9BD8 /* SCLAlertView-Info.plist */,
+				E3B90C13B20606BCAB13BFDACCADD87D /* SCLAlertView-prefix.pch */,
+				271C8E6E6CA50251BB669CEDBC455927 /* SCLAlertView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SCLAlertView";
+			sourceTree = "<group>";
+		};
+		60C41D3313E3297D09A3EB81EBB0737F /* ViewAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				8C385CC1F311BE1DF30B1CED6C9E09C0 /* Animation.swift */,
+				0B594CECBDBDDACA8B38740D1DA745C1 /* AnimationType.swift */,
+				8A756E73B2D1D9708B6F57C1F8438B73 /* Direction.swift */,
+				C5CB138A99C4EAB6C6081C76BA9D8DA8 /* UICollectionView + ViewAnimator.swift */,
+				32A44B8C742E1F320DA6DF051AC887DD /* UITableView + ViewAnimator.swift */,
+				9E2E4C9CC2CCBC6CCB45D0FE916E81F3 /* ViewAnimator.swift */,
+				D6E08CD7A8A8BE8E002D284B45B5034B /* ViewAnimatorConfig.swift */,
+				14522E7102FC51BBCA7BE64213AF9AD5 /* Support Files */,
+			);
+			name = ViewAnimator;
+			path = ViewAnimator;
+			sourceTree = "<group>";
+		};
+		6590CF7E90850471E7131DFEF33F5676 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8CC2ED63FDE532AAC7A669DF4A7F8A3 /* Valet.modulemap */,
+				CFA444562AE2C15E2721B139E755C411 /* Valet.xcconfig */,
+				99CA2C394C55491B184131CEE753F3FB /* Valet-dummy.m */,
+				2E69A1C2C1E3B888FCA981F2E3F90C74 /* Valet-Info.plist */,
+				C52C34C85E5CE97C4A2D77FDD41C2176 /* Valet-prefix.pch */,
+				8CD239B076E2E733120C6158763D40DB /* Valet-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Valet";
+			sourceTree = "<group>";
+		};
 		6B475D44F9DE8B3EB70D1C14FDE147B9 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,51 +298,34 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		92E7B56DD3229F32FF08FF70D7C6E2F5 /* Support Files */ = {
+		81E00BEC67BB99F164C86E1CCAA3D516 /* SCLAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				8A364D44D2520DACBB17FF90AAA1B11C /* Valet.modulemap */,
-				3A16558C7C5DDAD3C191CD0C059D74E8 /* Valet.xcconfig */,
-				2DA094038BE40372C92575811E1AE227 /* Valet-dummy.m */,
-				BED614E2C0F0DFC3DBB1A9782FBC2A5E /* Valet-Info.plist */,
-				41E08EF0050BA4528A60B596AEA23483 /* Valet-prefix.pch */,
-				07F9609AA9728F3DD6570794519F61CE /* Valet-umbrella.h */,
+				BD4E1D0BB7F8AA46D61118CD2893E311 /* SCLAlertView.swift */,
+				EC55ED4741B038D7958E06B515C98590 /* SCLExtensions.swift */,
+				48168D88192073A6D724CDA3B361A3C1 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Valet";
+			name = SCLAlertView;
+			path = SCLAlertView;
 			sourceTree = "<group>";
 		};
-		AC10D045A7F964549AC8AD790A8406C2 /* Valet */ = {
+		A2A40750A7ADE41A5949607D3F2D9CE2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7CFF452E5DFF412E4576737131522BD5 /* Accessibility.swift */,
-				F6C60A60BC2C9C7F7C36283A1B00AEE1 /* CloudAccessibility.swift */,
-				DC58FB34F99FE4260B5E4D400771AEDA /* Configuration.swift */,
-				F1294A3928E020BBD2638865912D6669 /* ErrorHandler.swift */,
-				92B8FD9D0D3B119DBFD6EF0980F0B121 /* Identifier.swift */,
-				9DCBD5D71E4081B97F43E8F25F83A976 /* Keychain.swift */,
-				D141206113D1C523F1945300DDAC4F02 /* KeychainQueryConvertible.swift */,
-				24712279E69718F92A307E2D238AC309 /* MigrationResult.swift */,
-				A89FE704A2E279DD06E15EAA4B93ED7C /* SecItem.swift */,
-				0631E4CB96A2ABE107CFFFBCF5984DE5 /* SecureEnclave.swift */,
-				B3B52917B2C8225B04B415BE72F0C9CF /* SecureEnclaveAccessControl.swift */,
-				79AA4EC132E0E446D83B4658F7CA488A /* SecureEnclaveValet.swift */,
-				ED0533C120D55C17237EA959F1765293 /* Service.swift */,
-				87C19BC374417B44E6B66F9EC89A3E99 /* SinglePromptSecureEnclaveValet.swift */,
-				B5D0695A6D0576B1B5B5E86C83CA4181 /* SwiftCompatibility.swift */,
-				9E4428E158792E86DCC912C7F4457F2C /* Valet.h */,
-				328C5BC5B2AD6695F4DC26D4935F2519 /* Valet.swift */,
-				92E7B56DD3229F32FF08FF70D7C6E2F5 /* Support Files */,
+				81E00BEC67BB99F164C86E1CCAA3D516 /* SCLAlertView */,
+				1DDE3AD85F1B4CD7745C7BF1B00110B7 /* Valet */,
+				60C41D3313E3297D09A3EB81EBB0737F /* ViewAnimator */,
 			);
-			name = Valet;
-			path = Valet;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		C512AD2B3471DA2E961E79B5BB87C9D0 /* Products */ = {
+		A6A9B9D676334803F62AC5DEDE62C7E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				6E3965947178FD906D982BC49CB02A33 /* Pods_SPVN.framework */,
+				962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */,
 				B3081E0CFC54E0C89C7B6D481B03DC95 /* Valet.framework */,
+				A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,28 +335,28 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				D0775D3CD59AF052F288FF148010FF23 /* Pods */,
-				C512AD2B3471DA2E961E79B5BB87C9D0 /* Products */,
+				A2A40750A7ADE41A5949607D3F2D9CE2 /* Pods */,
+				A6A9B9D676334803F62AC5DEDE62C7E5 /* Products */,
 				18CD699F530EB6BF78D71A41A17896A3 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D0775D3CD59AF052F288FF148010FF23 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AC10D045A7F964549AC8AD790A8406C2 /* Valet */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		637B3BD3BF26B179D2242475E2E0B093 /* Headers */ = {
+		179DF004DB1217CB452005623FC2EA4A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EA7D8B146651F0C71DD126CA37E350A /* Pods-SPVN-umbrella.h in Headers */,
+				C6A003E6C85A78D35FEB7F82E73B7A5E /* Pods-SPVN-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2568FC6A790CFA387B96DBED7E0BC776 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69437A6AA2866A54AACCCEA857664F47 /* SCLAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,26 +369,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C01257361E898E374FB0A6911FB063C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E16112E3DA618AA6046E09E11B1FD5 /* ViewAnimator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		87D39615181D9887B8094EF92A031058 /* Pods-SPVN */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1622144D9916F8E4BB8AC8992BCE140F /* Build configuration list for PBXNativeTarget "Pods-SPVN" */;
+			buildConfigurationList = 08CA872B393A6E651FBED2CFE8DCF545 /* Build configuration list for PBXNativeTarget "Pods-SPVN" */;
 			buildPhases = (
-				637B3BD3BF26B179D2242475E2E0B093 /* Headers */,
-				C4B5DF03EFF95829A4A17D47EBFE0C23 /* Sources */,
-				0FF0C6AF84DEF5B7A113FB352BEAA347 /* Frameworks */,
-				01583C2F44770174DCBB63D91D0F83DD /* Resources */,
+				179DF004DB1217CB452005623FC2EA4A /* Headers */,
+				32EF3128106D07E3AEB2869C303EED0F /* Sources */,
+				0A8101AA9C4D52EB68229926CDD62B6A /* Frameworks */,
+				22913720F15156B8AA50F65F683EFCAD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4FF08D0E71571E82919D85F488FD977F /* PBXTargetDependency */,
+				C9151651BF6921FD61D28213FBE44C4F /* PBXTargetDependency */,
+				89BA5F76D21F47BFD043A185C00C0FE9 /* PBXTargetDependency */,
+				BAAA38E2A8F55013A4A4E2A0235126E0 /* PBXTargetDependency */,
 			);
 			name = "Pods-SPVN";
 			productName = "Pods-SPVN";
 			productReference = 6E3965947178FD906D982BC49CB02A33 /* Pods_SPVN.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EFE5199A9D90502DB139AEABA7CBE7B /* Build configuration list for PBXNativeTarget "ViewAnimator" */;
+			buildPhases = (
+				C01257361E898E374FB0A6911FB063C7 /* Headers */,
+				3A823987FFCB5C3726EBB7A32E3B904E /* Sources */,
+				D2F8CEE48F5E5B43BF343771890BDE66 /* Frameworks */,
+				2954910303CBA399A078839A2F6CEC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewAnimator;
+			productName = ViewAnimator;
+			productReference = A76921F7329D552AD6FA723972B6337A /* ViewAnimator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0152970E5467A11DF89E7D22C63B47C /* SCLAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBBD336E2C1CE47CB387CBD269D6E58 /* Build configuration list for PBXNativeTarget "SCLAlertView" */;
+			buildPhases = (
+				2568FC6A790CFA387B96DBED7E0BC776 /* Headers */,
+				C62043287224DE5DD6688B165F41EA2E /* Sources */,
+				03B5D362B75E1F27D5669A43D702BC8A /* Frameworks */,
+				ECF5EFE0E25156C527D3ED02193610A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCLAlertView;
+			productName = SCLAlertView;
+			productReference = 962A4B1F73A781D3BB906D0525BD2A8A /* SCLAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E3D29E214E770F28213292B63B7A05DA /* Valet */ = {
@@ -284,26 +465,34 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = C512AD2B3471DA2E961E79B5BB87C9D0 /* Products */;
+			productRefGroup = A6A9B9D676334803F62AC5DEDE62C7E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				87D39615181D9887B8094EF92A031058 /* Pods-SPVN */,
+				E0152970E5467A11DF89E7D22C63B47C /* SCLAlertView */,
 				E3D29E214E770F28213292B63B7A05DA /* Valet */,
+				91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		01583C2F44770174DCBB63D91D0F83DD /* Resources */ = {
+		22913720F15156B8AA50F65F683EFCAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2954910303CBA399A078839A2F6CEC93 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,9 +506,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ECF5EFE0E25156C527D3ED02193610A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		32EF3128106D07E3AEB2869C303EED0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D6F20FF997BE3D030BD5774F499F4E /* Pods-SPVN-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A823987FFCB5C3726EBB7A32E3B904E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58CDDC315D072611DC4E0E8D7B2B399B /* Animation.swift in Sources */,
+				FB5B2EF00978168F84353DD89B808567 /* AnimationType.swift in Sources */,
+				44A41A19C4EBB3E69F800EF54C82A661 /* Direction.swift in Sources */,
+				2AC30876C833990D744C30FF47B32EE8 /* UICollectionView + ViewAnimator.swift in Sources */,
+				3D24A0293788B6740CA06D127A930F02 /* UITableView + ViewAnimator.swift in Sources */,
+				297F85DE0BF70E0BBCFC55A4EABE3AF7 /* ViewAnimator-dummy.m in Sources */,
+				46935F12196B8113019740EA716549BB /* ViewAnimator.swift in Sources */,
+				BD6DCC1280FBF8802E8256E27E72608D /* ViewAnimatorConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9550D39620C503C33CDC91298BDAA390 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,26 +563,187 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4B5DF03EFF95829A4A17D47EBFE0C23 /* Sources */ = {
+		C62043287224DE5DD6688B165F41EA2E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C307480EEC123ECF3EBEA7CA1BB7120 /* Pods-SPVN-dummy.m in Sources */,
+				B98733C303FFBD5D956071ED6940935F /* SCLAlertView-dummy.m in Sources */,
+				298E4F1A7F3DFD1F512EF7561C18CD20 /* SCLAlertView.swift in Sources */,
+				5394C4DCB14CD55B19D088F07382AE14 /* SCLExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4FF08D0E71571E82919D85F488FD977F /* PBXTargetDependency */ = {
+		89BA5F76D21F47BFD043A185C00C0FE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Valet;
 			target = E3D29E214E770F28213292B63B7A05DA /* Valet */;
-			targetProxy = 4A7827065A7B3198CDABAB76371EB2E1 /* PBXContainerItemProxy */;
+			targetProxy = 881D536BBD4762BE14E09F51EAE856E4 /* PBXContainerItemProxy */;
+		};
+		BAAA38E2A8F55013A4A4E2A0235126E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ViewAnimator;
+			target = 91BFC2827E7E6E2B51AB2CFF58AC6317 /* ViewAnimator */;
+			targetProxy = 03A33A257EE116282E7EA6113B0267C9 /* PBXContainerItemProxy */;
+		};
+		C9151651BF6921FD61D28213FBE44C4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCLAlertView;
+			target = E0152970E5467A11DF89E7D22C63B47C /* SCLAlertView */;
+			targetProxy = 67AAA795AB409999BD536C815331F018 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		00DB91C2629677AB5A6E264E0CD142C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2B9288B8C89F4CF601F45A5EF5A92A /* ViewAnimator.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0CB79E31621364E61909111A444652F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 713A2CDDF3C20AAFB9C70C66F3ABB6EF /* Pods-SPVN.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPVN/Pods-SPVN-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPVN/Pods-SPVN.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1C84D9AA6638F950F99D7901D6179582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E86774E6866B4B4EE69568B75D16AA2 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/SCLAlertView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				PRODUCT_MODULE_NAME = SCLAlertView;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E34278CE632F000596329F73345B068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D644AD63D61B1B3DE15D322865AB2389 /* Pods-SPVN.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SPVN/Pods-SPVN-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SPVN/Pods-SPVN.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,12 +804,10 @@
 			};
 			name = Release;
 		};
-		40E1E63A8BB5EF1C8FC86809DF3832DA /* Debug */ = {
+		4A91922E714119713DE623E9F04FE5B0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D644AD63D61B1B3DE15D322865AB2389 /* Pods-SPVN.debug.xcconfig */;
+			baseConfigurationReference = BF2B9288B8C89F4CF601F45A5EF5A92A /* ViewAnimator.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -439,61 +817,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SPVN/Pods-SPVN-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ViewAnimator/ViewAnimator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ViewAnimator/ViewAnimator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SPVN/Pods-SPVN.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ViewAnimator/ViewAnimator.modulemap";
+				PRODUCT_MODULE_NAME = ViewAnimator;
+				PRODUCT_NAME = ViewAnimator;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5221588A6AC194394C6EBE3A8F51E351 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 713A2CDDF3C20AAFB9C70C66F3ABB6EF /* Pods-SPVN.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SPVN/Pods-SPVN-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SPVN/Pods-SPVN.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -503,7 +842,7 @@
 		};
 		9D15394F3AF332B3F215ED19C93FC876 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A16558C7C5DDAD3C191CD0C059D74E8 /* Valet.xcconfig */;
+			baseConfigurationReference = CFA444562AE2C15E2721B139E755C411 /* Valet.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -535,6 +874,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A6E3B17BFFE1D37408081ED2F9739642 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E86774E6866B4B4EE69568B75D16AA2 /* SCLAlertView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCLAlertView/SCLAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCLAlertView/SCLAlertView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCLAlertView/SCLAlertView.modulemap";
+				PRODUCT_MODULE_NAME = SCLAlertView;
+				PRODUCT_NAME = SCLAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -602,7 +977,7 @@
 		};
 		E2E38F92DAF512FBC8F3FD065EC6221A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A16558C7C5DDAD3C191CD0C059D74E8 /* Valet.xcconfig */;
+			baseConfigurationReference = CFA444562AE2C15E2721B139E755C411 /* Valet.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -639,11 +1014,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1622144D9916F8E4BB8AC8992BCE140F /* Build configuration list for PBXNativeTarget "Pods-SPVN" */ = {
+		08CA872B393A6E651FBED2CFE8DCF545 /* Build configuration list for PBXNativeTarget "Pods-SPVN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				40E1E63A8BB5EF1C8FC86809DF3832DA /* Debug */,
-				5221588A6AC194394C6EBE3A8F51E351 /* Release */,
+				1E34278CE632F000596329F73345B068 /* Debug */,
+				0CB79E31621364E61909111A444652F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -662,6 +1037,24 @@
 			buildConfigurations = (
 				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
 				257497152829C177993B5EC99C1D227A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EFE5199A9D90502DB139AEABA7CBE7B /* Build configuration list for PBXNativeTarget "ViewAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00DB91C2629677AB5A6E264E0CD142C3 /* Debug */,
+				4A91922E714119713DE623E9F04FE5B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBBD336E2C1CE47CB387CBD269D6E58 /* Build configuration list for PBXNativeTarget "SCLAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C84D9AA6638F950F99D7901D6179582 /* Debug */,
+				A6E3B17BFFE1D37408081ED2F9739642 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosViewController" customModule="SPVN" customModuleProvider="target">
             <connections>
                 <outlet property="banner" destination="v9Y-Ck-SxJ" id="oqC-Ja-7uq"/>
+                <outlet property="collectionView" destination="vnO-x3-d13" id="Jup-IR-hs5"/>
                 <outlet property="heightBanner" destination="4Pa-4k-X0a" id="kjh-3j-5lR"/>
                 <outlet property="scrollView" destination="x2e-2V-zGz" id="MqV-iD-ttT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -30,10 +31,16 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eDh-LQ-tMs">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                     <subviews>
-                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q5w-an-w4l">
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vnO-x3-d13">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </tableView>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x6K-BL-TbX">
+                                                <size key="itemSize" width="50" height="50"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                        </collectionView>
                                     </subviews>
                                 </stackView>
                             </subviews>
@@ -58,9 +65,9 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstItem="q5w-an-w4l" firstAttribute="height" secondItem="Xmk-OI-FK8" secondAttribute="height" id="CT4-P4-AYt"/>
                         <constraint firstAttribute="bottom" secondItem="v9Y-Ck-SxJ" secondAttribute="bottom" id="EIe-wB-Vhp"/>
                         <constraint firstItem="v9Y-Ck-SxJ" firstAttribute="top" secondItem="x2e-2V-zGz" secondAttribute="bottom" id="QaT-0V-ack"/>
+                        <constraint firstItem="vnO-x3-d13" firstAttribute="height" secondItem="Xmk-OI-FK8" secondAttribute="height" id="Tkp-NU-BTe"/>
                         <constraint firstItem="x2e-2V-zGz" firstAttribute="leading" secondItem="Xmk-OI-FK8" secondAttribute="leading" id="Ttv-df-v0q"/>
                         <constraint firstAttribute="trailing" secondItem="x2e-2V-zGz" secondAttribute="trailing" id="cP7-SF-2d7"/>
                         <constraint firstItem="x2e-2V-zGz" firstAttribute="top" secondItem="Xmk-OI-FK8" secondAttribute="top" id="sz2-U4-qAt"/>

@@ -1,16 +1,24 @@
 PODS:
+  - SCLAlertView (0.8)
   - Valet (3.2.6)
+  - ViewAnimator (2.7.0)
 
 DEPENDENCIES:
+  - SCLAlertView
   - Valet
+  - ViewAnimator
 
 SPEC REPOS:
-  trunk:
+  https://github.com/cocoapods/specs.git:
+    - SCLAlertView
     - Valet
+    - ViewAnimator
 
 SPEC CHECKSUMS:
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   Valet: dcc4ff74f0d010be665239ab89c7a4a5cd39ee33
+  ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
 
-PODFILE CHECKSUM: acd2545ef6a2e49bc89dcc6c5e846f81310b8780
+PODFILE CHECKSUM: 9d9983b73aa594982409390a871fb18a1ac58d70
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.7.5
