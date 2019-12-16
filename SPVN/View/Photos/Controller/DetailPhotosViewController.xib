@@ -39,18 +39,19 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8NG-ku-5xq">
                                                             <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YzP-Dk-mg0">
-                                                                    <rect key="frame" x="28.5" y="12.5" width="120" height="25"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YzP-Dk-mg0">
+                                                                    <rect key="frame" x="41.5" y="12.5" width="94.5" height="25"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_plus" translatesAutoresizingMaskIntoConstraints="NO" id="fst-hi-DrI">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="25"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="25"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="25" id="3Pc-xp-1fh"/>
+                                                                                <constraint firstAttribute="width" constant="30" id="3cO-jQ-Fj7"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Camera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E36-2X-xq6">
-                                                                            <rect key="frame" x="60" y="0.0" width="60" height="25"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <rect key="frame" x="38" y="0.0" width="56.5" height="25"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                             <color key="textColor" red="0.98823529409999999" green="0.7725490196" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -90,18 +91,19 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmx-Fd-AQw">
                                                             <rect key="frame" x="193" y="0.0" width="177" height="50"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Jhq-eQ-l8O">
-                                                                    <rect key="frame" x="37.5" y="10" width="102" height="30"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jhq-eQ-l8O">
+                                                                    <rect key="frame" x="45.5" y="10" width="86" height="30"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_import" translatesAutoresizingMaskIntoConstraints="NO" id="6Ma-CW-STY">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="51" height="30"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                             <constraints>
+                                                                                <constraint firstAttribute="width" constant="30" id="IDg-KW-9R7"/>
                                                                                 <constraint firstAttribute="height" constant="30" id="g5S-u0-tgd"/>
                                                                             </constraints>
                                                                         </imageView>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Import" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS8-7t-fzk">
-                                                                            <rect key="frame" x="51" y="0.0" width="51" height="30"/>
-                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <rect key="frame" x="38" y="0.0" width="48" height="30"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                             <color key="textColor" red="0.98823529409999999" green="0.7725490196" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>

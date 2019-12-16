@@ -12,7 +12,7 @@ import ViewAnimator
 import MobileCoreServices
 import CropViewController
 
-class DetailPhotosViewController: BaseViewController {
+final class DetailPhotosViewController: BaseViewController {
     
     // MARK IBOutlet
     @IBOutlet private weak var collectionView: UICollectionView!
