@@ -28,23 +28,34 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbs-LB-Jl7">
-                                <rect key="frame" x="5" y="63" width="90" height="32"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbs-LB-Jl7" customClass="GradientView" customModule="SPVN" customModuleProvider="target">
+                                <rect key="frame" x="5" y="68" width="90" height="32"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yTl-H1-oe3">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="32"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPT-8t-UsV">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="32"/>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="25a-g5-W6e">
-                                                <rect key="frame" x="50" y="0.0" width="13.5" height="32"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cxc-JG-1Ue">
+                                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_video" translatesAutoresizingMaskIntoConstraints="NO" id="XPT-8t-UsV">
+                                                        <rect key="frame" x="3.5" y="3.5" width="25" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="XPT-8t-UsV" secondAttribute="height" multiplier="1:1" id="LbD-OA-LFB"/>
+                                                            <constraint firstAttribute="height" constant="25" id="r1N-QA-HAZ"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Cxc-JG-1Ue" secondAttribute="height" multiplier="1:1" id="2NE-SS-NpR"/>
+                                                    <constraint firstItem="XPT-8t-UsV" firstAttribute="centerY" secondItem="Cxc-JG-1Ue" secondAttribute="centerY" id="4jq-9T-tYV"/>
+                                                    <constraint firstItem="XPT-8t-UsV" firstAttribute="centerX" secondItem="Cxc-JG-1Ue" secondAttribute="centerX" id="fPp-8u-IEw"/>
+                                                </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIW-bj-ltq">
-                                                <rect key="frame" x="63.5" y="0.0" width="26.5" height="32"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIW-bj-ltq">
+                                                <rect key="frame" x="32" y="0.0" width="58" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -58,6 +69,14 @@
                                     <constraint firstAttribute="height" constant="32" id="afC-Xb-MCs"/>
                                     <constraint firstAttribute="bottom" secondItem="yTl-H1-oe3" secondAttribute="bottom" id="l8C-Ae-E94"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -68,7 +87,7 @@
                             <constraint firstItem="sbs-LB-Jl7" firstAttribute="leading" secondItem="gEh-iV-w2V" secondAttribute="leading" constant="5" id="aLW-oi-NtV"/>
                             <constraint firstAttribute="trailing" secondItem="sbs-LB-Jl7" secondAttribute="trailing" constant="5" id="j6E-N9-Mhc"/>
                             <constraint firstAttribute="trailing" secondItem="oyA-IS-lVg" secondAttribute="trailing" id="nK9-md-94P"/>
-                            <constraint firstAttribute="bottom" secondItem="sbs-LB-Jl7" secondAttribute="bottom" constant="5" id="yUg-aE-MDn"/>
+                            <constraint firstAttribute="bottom" secondItem="sbs-LB-Jl7" secondAttribute="bottom" id="yUg-aE-MDn"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -83,4 +102,7 @@
             <point key="canvasLocation" x="128" y="153"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="ic_video" width="32" height="32"/>
+    </resources>
 </document>

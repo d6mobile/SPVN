@@ -12,7 +12,8 @@ target 'SPVN' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'BSImagePicker', "~> 2.8"
   pod 'CocoaLumberjack/Swift'
-  pod 'CropViewController''
+  pod 'CropViewController'
+  pod 'DKImagePickerController'
   
 #  post_install do |installer|
 #    installer.pods_project.targets.each do |target|

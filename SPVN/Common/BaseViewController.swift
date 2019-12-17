@@ -13,6 +13,7 @@ import SnapKit
 import BSImagePicker
 import Photos
 import CropViewController
+import DKImagePickerController
 
 class BaseViewController: UIViewController {
     
@@ -126,23 +127,23 @@ class BaseViewController: UIViewController {
         let spvnCameraVC = SPVNCameraViewController(nibName: SPVNCameraViewController.className, bundle: nil)
         spvnCameraVC.modalPresentationStyle = .fullScreen
         self.present(spvnCameraVC, animated: true, completion: nil)
-//        AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
-//            if response {
-//                //access granted
-//                DispatchQueue.main.async {
-//                    self.picker = UIImagePickerController()
-//                    guard let picker = self.picker else { return }
-//                    picker.allowsEditing = false
-//                    picker.sourceType = .camera
-//                    picker.cameraDevice = .rear
-//                    picker.cameraCaptureMode = .photo
-//                    picker.delegate = self
-//                    self.present(picker, animated: true, completion: nil)
-//                }
-//            } else {
-//                AlertView.shared.showAlert(title: "", message: "You must have access to the camera to use this", handerLeft: nil, handerRight: nil, title_btn_left: "OK", title_btn_right: nil, viewController: self)
-//            }
-//        }
+        //        AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
+        //            if response {
+        //                //access granted
+        //                DispatchQueue.main.async {
+        //                    self.picker = UIImagePickerController()
+        //                    guard let picker = self.picker else { return }
+        //                    picker.allowsEditing = false
+        //                    picker.sourceType = .camera
+        //                    picker.cameraDevice = .rear
+        //                    picker.cameraCaptureMode = .photo
+        //                    picker.delegate = self
+        //                    self.present(picker, animated: true, completion: nil)
+        //                }
+        //            } else {
+        //                AlertView.shared.showAlert(title: "", message: "You must have access to the camera to use this", handerLeft: nil, handerRight: nil, title_btn_left: "OK", title_btn_right: nil, viewController: self)
+        //            }
+        //        }
     }
     
     // MARK: BSImagePicker
@@ -198,6 +199,30 @@ class BaseViewController: UIViewController {
         }, completion: {
             //TODO: - BSImagePickerViewController
         })
+    }
+    
+    func showVideoSelect(isMultiple: Bool, nameAlbum: String, completion: @escaping () -> Void) {
+        let pickerController = DKImagePickerController()
+        let appearance = UINavigationBar.appearance(whenContainedInInstancesOf: [DKImagePickerController.self])
+        appearance.setBackgroundImage(UIImage(color: UIColor(red: 14.0/255, green: 17.0/255, blue: 33.0/255, alpha: 1)), for: .any, barMetrics: .default)
+        appearance.shadowImage = UIImage(color: UIColor(red: 14.0/255, green: 17.0/255, blue: 33.0/255, alpha: 1))
+        appearance.tintColor = UIColor.white
+        appearance.isTranslucent = false
+        appearance.barStyle = .black
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white,
+                                          NSAttributedString.Key.strokeColor: UIColor.white,
+                                          NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18, weight: .medium)
+        ]
+        pickerController.allowSwipeToSelect = true
+        pickerController.showsCancelButton = true
+        pickerController.assetType = .allVideos
+        pickerController.sourceType = .photo
+        pickerController.modalPresentationStyle = .fullScreen
+        pickerController.didSelectAssets = { (assets: [DKAsset]) in
+            print("didSelectAssets")
+            print(assets)
+        }
+        self.present(pickerController, animated: true, completion: nil)
     }
     
     func getAssetImage(asset: PHAsset) -> UIImage {

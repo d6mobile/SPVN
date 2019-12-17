@@ -109,7 +109,7 @@ final class VideosViewController: BaseViewController {
             PHPhotoLibrary.requestAuthorization({status in
                 if status == .authorized {
                     DispatchQueue.main.async {
-                        self.showPhotoSelect(isMultiple: true, nameAlbum: self.navigationItem.title!) {[weak self] in
+                        self.showVideoSelect(isMultiple: true, nameAlbum: self.navigationItem.title!) {[weak self] in
                             self?.fetchData()
                         }
                     }
@@ -119,7 +119,7 @@ final class VideosViewController: BaseViewController {
             })
         case .authorized:
             DispatchQueue.main.async {
-                self.showPhotoSelect(isMultiple: true, nameAlbum: self.navigationItem.title!) {[weak self] in
+                self.showVideoSelect(isMultiple: true, nameAlbum: self.navigationItem.title!) {[weak self] in
                     self?.fetchData()
                 }
             }
@@ -164,6 +164,7 @@ final class VideosViewController: BaseViewController {
     }
     
     @IBAction private func cameraDidTouch(_ sender: UIButton) {
+       
        self.showCamera()
     }
 }

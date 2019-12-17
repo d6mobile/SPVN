@@ -9,6 +9,11 @@
 import AVFoundation
 import UIKit
 
+enum CameraType: Int {
+    case photo = 1
+    case video = 2
+}
+
 class CameraController: NSObject {
     var captureSession: AVCaptureSession?
     
@@ -18,6 +23,7 @@ class CameraController: NSObject {
     var frontCameraInput: AVCaptureDeviceInput?
     
     var photoOutput: AVCapturePhotoOutput?
+    var movieOutput = AVCaptureMovieFileOutput()
     
     var rearCamera: AVCaptureDevice?
     var rearCameraInput: AVCaptureDeviceInput?
@@ -26,6 +32,8 @@ class CameraController: NSObject {
     
     var flashMode = AVCaptureDevice.FlashMode.off
     var photoCaptureCompletionBlock: ((UIImage?, Error?) -> Void)?
+    
+    var activeInput: AVCaptureDeviceInput!
 }
 
 extension CameraController {
@@ -110,6 +118,47 @@ extension CameraController {
             }
         }
     }
+    
+    //MARK:- Setup Camera
+    func setupSession() -> Bool {
+        guard let captureSession = self.captureSession else { return false }
+        captureSession.sessionPreset = AVCaptureSession.Preset.high
+        // Setup Camera
+        let camera = AVCaptureDevice.default(for: AVMediaType.video)!
+        do {
+            let input = try AVCaptureDeviceInput(device: camera)
+
+            if captureSession.canAddInput(input) {
+                captureSession.addInput(input)
+                activeInput = input
+            }
+        } catch {
+            print("Error setting device video input: \(error)")
+            return false
+        }
+
+        // Setup Microphone
+        let microphone = AVCaptureDevice.default(for: AVMediaType.audio)!
+
+        do {
+            let micInput = try AVCaptureDeviceInput(device: microphone)
+            if captureSession.canAddInput(micInput) {
+                captureSession.addInput(micInput)
+            }
+        } catch {
+            print("Error setting device audio input: \(error)")
+            return false
+        }
+
+
+        // Movie output
+        if captureSession.canAddOutput(movieOutput) {
+            captureSession.addOutput(movieOutput)
+        }
+
+        return true
+    }
+
     
     func displayPreview(on view: UIView) throws {
         guard let captureSession = self.captureSession, captureSession.isRunning else { throw CameraControllerError.captureSessionIsMissing }
